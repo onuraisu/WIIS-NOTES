@@ -1,0 +1,2243 @@
+# 逆関数
+
+$(1)$関数$f: \mathbb{R} \supset X \rightarrow \mathbb{R}$が与えられたとき、終集合の要素$y \in \mathbb{R}$の逆像とは、
+
+
+
+$$
+
+f^{-1}(y)=\{x \in X \mid y=f(x)\}
+
+$$
+
+
+
+と定義される定義域$X$の部分集合である。
+
+
+
+$(2)$一般には、終集合の要素$y \in \mathbb{R}$を任意に選んだとき、それに対して$y=f(x)$を満たす定義域の要素$x \in X$は存在するとは限らず(この場合の逆像$f^{-1}(y)$は空集合)、存在する場合でも一意的であるとは限らない(この場合の逆像$f^{-1}(y)$は複数の要素を持つ集合)。
+
+
+
+$(3)$一方、関数$f: \mathbb{R} \supset X \rightarrow \mathbb{R}$が与えられたとき、終集合の任意の要素$y \in \mathbb{R}$の逆像$f^{-1}(y) \subset X$が1点集合になることが保証される場合には、つまり、以下の条件
+
+
+
+$$
+
+\forall y \in \mathbb{R}, \exists x \in X: f^{-1}(y)=\{x\}
+
+$$
+
+
+
+が成り立つ場合には、集合$f^{-1}(y)$と、そこに含まれる1つの要素$x$を同一視することにより、終集合のそれぞれの要素$y \in \mathbb{R}$に対して、その逆像に属する唯一の要素$f^{-1}(y)=x \in X$を値として定める$\mathbb{R}$から$X$への関数が定義可能である。
+
+
+
+$(4)$このように定義された関数を$f$の**逆関数**(inverse function)と呼び、
+
+
+
+$$
+
+f^{-1}: \mathbb{R} \rightarrow X
+
+$$
+
+
+
+で表記する。
+
+
+
+$(5)$つまり、逆関数$f^{-1}$がそれぞれの$y \in \mathbb{R}$に対して定める値$f^{-1}(y) \in X$は、$f$による$y$の逆像$f^{-1}(y) \subset X$に含まれる唯一の要素$x$と一致する。
+
+
+
+$(6)$繰り返しになるが、関数$f: \mathbb{R} \supset X \rightarrow \mathbb{R}$による要素$y \in \mathbb{R}$の逆像$f^{-1}(y)$は$X$の「部分集合」である一方、関数$f$の逆関数$f^{-1}: \mathbb{R} \rightarrow X$による要素$y \in \mathbb{R}$の像$f^{-1}(y)$は$X$の「要素」である。
+
+
+
+$(7)$両者を同一の記号$f^{-1}(y)$によって表記しているが、厳密にはこれらは異なる概念である。
+
+
+
+$(8)$ただ、逆関数$f^{-1}$について考える際には$f$による$y$の逆像$f^{-1}(y)$は1つの要素だけを持つ集合であることが前提になっており、その1つの要素は逆写像$f^{-1}$による$y$の像$f^{-1}(y)$と一致するため、両者を同一視するということである。
+
+
+
+$(9)$関数$f: \mathbb{R} \supset X \rightarrow \mathbb{R}$の始集合は$X$である一方で終集合は$\mathbb{R}$だが、その逆関数$f^{-1}: \mathbb{R} \rightarrow X$の始集合は$\mathbb{R}$である一方で終集合は$X$である。
+
+
+
+$(10)$つまり、関数$f$と逆関数$f^{-1}$とでは、始集合と終集合の立場が逆転する。
+
+
+
+&&&ex (逆関数)
+
+$(1)$関数$f: \mathbb{R} \supset\{1,2,3\} \rightarrow\{4,5,6\}$が、
+
+
+
+$$
+
+\begin{aligned}
+
+& f(1)=4 \\
+
+& f(2)=5 \\
+
+& f(3)=6
+
+\end{aligned}
+
+$$
+
+
+
+を満たすものとする。
+
+
+
+$(2)$$f$による$\{4,5,6\}$の要素の逆像は、
+
+
+
+$$
+
+\begin{aligned}
+
+& f^{-1}(4)=\{1\} \\
+
+& f^{-1}(5)=\{2\} \\
+
+& f^{-1}(6)=\{3\}
+
+\end{aligned}
+
+$$
+
+
+
+である。
+
+
+
+$(3)$$f$による終集合$\{4,5,6\}$の要素の逆像がいずれも1点集合であることが確認できたため逆関数
+
+
+
+$$
+
+f^{-1}:\{4,5,6\} \rightarrow\{1,2,3\}
+
+$$
+
+
+
+が定義可能であり、これは、
+
+
+
+$$
+
+\begin{aligned}
+
+& f^{-1}(4)=1 \\
+
+& f^{-1}(5)=2 \\
+
+& f^{-1}(6)=3
+
+\end{aligned}
+
+$$
+
+
+
+を満たす。
+
+&&&
+
+
+
+&&&ex (逆関数)
+
+$(1)$関数$f: \mathbb{R} \rightarrow \mathbb{R}$はそれぞれの$x \in \mathbb{R}$に対して、
+
+
+
+$$
+
+f(x)=2 x+1
+
+$$
+
+
+
+を定めるものとする。
+
+
+
+$(2)$$f$による終集合の要素$y \in \mathbb{R}$の逆像は、
+
+
+
+$$
+
+\begin{aligned}
+
+f^{-1}(y) & =\{x \in \mathbb{R} \mid y=f(x)\} \quad \because \text { 逆像の定義 } \\
+
+& =\{x \in \mathbb{R} \mid y=2 x+1\} \quad \because f \text { の定義 } \\
+
+& =\left\{x \in \mathbb{R} \left\lvert\, x=\frac{y-1}{2}\right.\right\}
+
+\end{aligned}
+
+$$
+
+
+
+だが、これは1点集合であるため逆関数$f^{-1}: \mathbb{R} \rightarrow \mathbb{R}$が定義可能であり、$f^{-1}$はそれぞれの$y \in \mathbb{R}$に対して、
+
+
+
+$$
+
+f^{-1}(y)=\frac{y-1}{2}
+
+$$
+
+
+
+を定める。
+
+&&&
+
+
+
+&&&ex (逆関数)
+
+$(1)$関数$f: \mathbb{R} \rightarrow \mathbb{R}$は「インチ(in)」を「センチメートル(cm)」に変換する関数であるものとする。
+
+
+
+$(2)$2つの単位の間には以下の関係
+
+
+
+$1$インチ $=$ $2.54$センチメートル
+
+
+
+が成り立つため、この関数$f$はそれぞれの$x \in \mathbb{R}$に対して、
+
+
+
+$$
+
+f(x)=2.54 x
+
+$$
+
+
+
+を定める。
+
+
+
+$(3)$$f$による終集合の要素$y \in \mathbb{R}$の逆像は、
+
+
+
+$$
+
+\begin{aligned}
+
+f^{-1}(y) & =\{x \in \mathbb{R} \mid y=f(x)\} & & \because \text { 逆像の定義 } \\
+
+& =\{x \in \mathbb{R} \mid y=2.54 x\} & & \because f \text { の定義 } \\
+
+& =\left\{x \in \mathbb{R} \left\lvert\, x=\frac{y}{2.54}\right.\right\} & &
+
+\end{aligned}
+
+$$
+
+
+
+だが、これは1点集合であるため逆関数$f^{-1}: \mathbb{R} \rightarrow \mathbb{R}$が定義可能であり、$f^{-1}$はそれぞれの$y \in \mathbb{R}$に対して、
+
+
+
+$$
+
+f^{-1}(y)=\frac{y}{2.54}
+
+$$
+
+
+
+を定める。
+
+
+
+$(4)$この逆関数$f^{-1}$は「センチメートル」を「インチ」に変換する関数である。
+
+&&&
+
+
+
+# 逆関数は存在するとは限らない：関数による要素の逆像が空集合である場合
+
+$(1)$関数の逆関数は存在するとは限らない。
+
+
+
+$(2)$関数$f: \mathbb{R} \supset X \rightarrow \mathbb{R}$が与えられているものとする。
+
+
+
+$(3)$加えて、終集合に属する少なくとも1つの要素$y \in \mathbb{R}$について、その逆像$f^{-1}(y) \subset X$が空集合であるものとする。
+
+
+
+$(4)$この場合、逆関数$f^{-1}: \mathbb{R} \rightarrow X$がその点$y$に対して定めるべき値がそもそも存在しないため、逆関数$f^{-1}$は定義不可能である。
+
+
+
+&&&ex (逆関数を持たない関数)
+
+$(1)$関数$f: \mathbb{Z} \rightarrow \mathbb{Z}$はそれぞれの$x \in \mathbb{Z}$に対して、
+
+
+
+$$
+
+f(x)=2 x
+
+$$
+
+
+
+を像として定めるものとする。
+
+
+
+$(2)$ただし、$\mathbb{Z}$はすべての整数からなる集合である。
+
+
+
+$(3)$$f$によるそれぞれの整数$y \in \mathbb{Z}$の逆像は、
+
+
+
+$$
+
+\begin{aligned}
+
+f^{-1}(y) & =\{x \in \mathbb{Z} \mid y=f(x)\} \quad \because f^{-1}(y) \text { の定義 } \\
+
+& =\{x \in \mathbb{Z} \mid y=2 x\} \quad \because f \text { の定義 } \\
+
+& =\left\{x \in \mathbb{Z} \left\lvert\, x=\frac{y}{2}\right.\right\}
+
+\end{aligned}
+
+$$
+
+
+
+だが、$y$が奇数である場合に$\frac{y}{2}$は整数でないため、$f^{-1}(y)$は空集合になる。
+
+
+
+$(4)$したがって、逆関数$f^{-1}: \mathbb{Z} \rightarrow \mathbb{Z}$は存在しない。
+
+&&&
+
+
+
+$(1)$関数$f: \mathbb{R} \supset X \rightarrow \mathbb{R}$の逆関数が存在しない場合でも、その終集合$\mathbb{R}$を制限することにより、逆関数$f^{-1}$を作ることができる場合がある。
+
+
+
+$(2)$以下の例より明らかである。
+
+
+
+&&&ex (逆関数)
+
+$(1)$写像$f: \mathbb{Z} \rightarrow \mathbb{Z}$はそれぞれの$x \in \mathbb{Z}$に対して、
+
+
+
+$$
+
+f(x)=2 x
+
+$$
+
+
+
+を像として定めるものとする。
+
+
+
+$(2)$先に明らかになったように逆写像$f^{-1}: \mathbb{Z} \rightarrow \mathbb{Z}$は存在しない。
+
+
+
+$(3)$では、この関数$f$の終集合を偶数全体の集合$E$に縮小して、
+
+
+
+$$
+
+f: \mathbb{Z} \rightarrow E
+
+$$
+
+
+
+とした場合にはどうなるだろうか。
+
+
+
+$(4)$$f$によるそれぞれの偶数$y \in E$の逆像は、
+
+
+
+$$
+
+\begin{aligned}
+
+f^{-1}(y) & =\{x \in \mathbb{Z} \mid y=f(x)\} \quad \because f^{-1}(y) \text { の定義 } \\
+
+& =\{x \in \mathbb{Z} \mid y=2 x\} \quad \because f \text { の定義 } \\
+
+& =\left\{x \in \mathbb{Z} \left\lvert\, x=\frac{y}{2}\right.\right\}
+
+\end{aligned}
+
+$$
+
+
+
+だが、$y$が偶数であるため$\frac{y}{2}$は整数になる。
+
+
+
+$(5)$したがってこの場合には逆写像
+
+
+
+$$
+
+f^{-1}: E \rightarrow \mathbb{Z}
+
+$$
+
+
+
+が定義可能であり、これはそれぞれの偶数$y \in E$に対して、
+
+
+
+$$
+
+f^{-1}(y)=\frac{y}{2}
+
+$$
+
+
+
+を定める。
+
+&&&
+
+
+
+# 逆関数は存在するとは限らない：関数による要素の逆像が複数の要素を持つ場合
+
+$(1)$関数$f: \mathbb{R} \supset X \rightarrow \mathbb{R}$が与えられているものとする。
+
+
+
+$(2)$加えて、終集合に属する少なくとも1つの要素$y \in \mathbb{R}$について、その逆像$f^{-1}(y) \subset X$が複数の要素を持つものとする。
+
+
+
+$(3)$この場合、逆関数$f^{-1}: \mathbb{R} \rightarrow X$がその点$y$に対して定めるべき値が一意的に定まらないため、逆関数$f^{-1}$は定義不可能である。
+
+
+
+&&&ex (逆関数を持たない関数)
+
+$(1)$関数$f: \mathbb{R} \rightarrow \mathbb{R}$はそれぞれの$x \in \mathbb{R}$に対して、
+
+
+
+$$
+
+f(x)=x^2
+
+$$
+
+
+
+を像として定めるものとする。
+
+
+
+$(2)$$f$によるそれぞれの$y \in \mathbb{R}$の逆像は、
+
+
+
+$$
+
+\begin{aligned}
+
+f^{-1}(y) & =\left\{x \in \mathbb{R} \mid y=x^2\right\} \\
+
+& =\{\sqrt{y},-\sqrt{y}\}
+
+\end{aligned}
+
+$$
+
+
+
+となる。
+
+
+
+$(3)$例えば、
+
+
+
+$$
+
+f^{-1}(1)=\left\{x \in \mathbb{R} \mid 1=x^2\right\}=\{1,-1\}
+
+$$
+
+
+
+となるが、これは1点集合ではないため逆関数$f^{-1}: \mathbb{R} \rightarrow \mathbb{R}$は存在しない。
+
+&&&
+
+
+
+$(1)$関数$f: \mathbb{R} \supset X \rightarrow \mathbb{R}$の逆関数が存在しない場合でも、その始集合$X$を制限することにより、逆関数$f^{-1}$を作ることができる場合がある。
+
+
+
+$(2)$以下の例より明らかである。
+
+
+
+&&&ex (逆関数)
+
+$(1)$関数$f: \mathbb{R} \rightarrow \mathbb{R}$はそれぞれの$x \in \mathbb{R}$に対して、
+
+
+
+$$
+
+f(x)=x^2
+
+$$
+
+
+
+を像として定めるものとする。
+
+
+
+$(2)$先に明らかになったように逆関数$f^{-1}: \mathbb{R} \rightarrow \mathbb{R}$は存在しない。
+
+
+
+$(3)$では、この関数$f$の始集合を非負の実数からなる集合$\mathbb{R}_{+}$に縮小して、
+
+
+
+$$
+
+f: \mathbb{R}_{+} \rightarrow \mathbb{R}
+
+$$
+
+
+
+とした場合にはどうなるだろうか。
+
+
+
+$(4)$$f$によるそれぞれの$y \in \mathbb{R}$の逆像は、
+
+
+
+$$
+
+\begin{aligned}
+
+f^{-1}(y) & =\left\{x \in \mathbb{R}_{+} \mid y=x^2\right\} \\
+
+& =\{\sqrt{y}\}
+
+\end{aligned}
+
+$$
+
+
+
+となり、これは1点集合であるため逆関数$f^{-1}: \mathbb{R} \rightarrow \mathbb{R}_{+}$が定義可能であり、これはそれぞれの$y \in \mathbb{R}$に対して、
+
+
+
+$$
+
+f^{-1}(y)=\sqrt{y}
+
+$$
+
+
+
+を定める。
+
+&&&
+
+
+
+# 逆関数が存在するための必要十分条件
+
+$(1)$関数$f: \mathbb{R} \supset X \rightarrow \mathbb{R}$が単射であることは、
+
+
+
+$$
+
+\forall x, x^{\prime} \in X:\left[x \neq x^{\prime} \Rightarrow f(x) \neq f\left(x^{\prime}\right)\right]
+
+$$
+
+
+
+が成り立つことを意味し、$f$が全射であることは、
+
+
+
+$$
+
+\forall y \in \mathbb{R}, \exists x \in X: y=f(x)
+
+$$
+
+
+
+が成り立つことを意味する。
+
+
+
+$(2)$単射かつ全射であるような関数を全単射と呼ぶ。
+
+
+
+$(3)$関数が全単射である場合には、その逆関数が必ず存在する。
+
+
+
+&&&prop (逆関数が存在するための十分条件)
+
+$(1)$関数$f: \mathbb{R} \supset X \rightarrow \mathbb{R}$が全単射であるならば、逆関数$f^{-1}: \mathbb{R} \rightarrow X$が存在する。
+
+&&&
+
+
+
+$(1)$先の命題の逆もまた成立する。
+
+
+
+$(2)$つまり、関数の逆関数が存在する場合、その関数は全単射である。
+
+
+
+&&&prop (逆関数が存在するための必要条件)
+
+$(1)$関数$f: \mathbb{R} \supset X \rightarrow \mathbb{R}$の逆関数$f^{-1}: \mathbb{R} \rightarrow X$が存在するならば、$f$は全単射である。
+
+&&&
+
+
+
+$(1)$以上の2つの命題より、関数が全単射であることと、その逆関数が存在することは必要十分であることが明らかになった。
+
+
+
+&&&prop (逆関数が存在するための必要十分条件)
+
+$(1)$関数$f: \mathbb{R} \supset X \rightarrow \mathbb{R}$が全単射であることと、逆関数$f^{-1}: \mathbb{R} \rightarrow X$が存在することは必要十分である。
+
+&&&
+
+
+
+$(1)$関数$f$が与えられたとき、以下の関係
+
+
+
+$f$ は全単射である ⇔ 逆関数 $f^{-1}$ が存在する
+
+
+
+が成り立つことが明らかになった。
+
+
+
+$(2)$であるならば、以下の関係
+
+
+
+$f$ は全単射ではない ⇔ 逆関数 $f^{-1}$ が存在しない
+
+
+
+もまた成り立つ。
+
+
+
+&&&ex (逆関数)
+
+$(1)$関数$f: \mathbb{Z} \rightarrow \mathbb{Z}$はそれぞれの$x \in \mathbb{Z}$に対して、
+
+
+
+$$
+
+f(x)=2 x
+
+$$
+
+
+
+を像として定めるものとする。
+
+
+
+$(2)$先に明らかになったように逆写像$f^{-1}: \mathbb{Z} \rightarrow \mathbb{Z}$は存在しない。
+
+
+
+$(3)$したがって先の命題より、$f$は全単射ではないはずである。
+
+
+
+$(4)$実際、奇数$y \in \mathbb{Z}$に注目したとき、それに対して、
+
+
+
+$$
+
+2 x=y
+
+$$
+
+
+
+すなわち、
+
+
+
+$$
+
+f(x)=y
+
+$$
+
+
+
+を満たす整数$x \in \mathbb{Z}$は存在しないため$f$は全射ではなく、したがって全単射でもない。
+
+
+
+$(5)$一方、関数$f: \mathbb{Z} \rightarrow \mathbb{Z}$の終集合を偶数全体の集合$E$に縮小して、
+
+
+
+$$
+
+f: \mathbb{Z} \rightarrow E
+
+$$
+
+
+
+とした場合、先に明らかになったように逆写像$f^{-1}: \mathbb{Z} \rightarrow \mathbb{Z}$は存在する。
+
+
+
+$(6)$したがって先の命題より、$f$は全単射であるはずである。
+
+
+
+$(7)$実際、終集合を$E$に制限した$f$は全単射である。
+
+&&&
+
+
+
+# 単射が生成する全単射
+
+$(1)$関数$f: \mathbb{R} \supset X \rightarrow \mathbb{R}$が単射である一方で全射ではない状況を想定する。
+
+
+
+$(2)$関数の終集合を値域に制限すれば全射になるため、関数$f$の終集合を値域
+
+
+
+$$
+
+f(X)=\{f(x) \in \mathbb{R} \mid x \in X\}
+
+$$
+
+
+
+に制限して、
+
+
+
+$$
+
+f: \mathbb{R} \supset X \rightarrow f(X)
+
+$$
+
+
+
+とすれば全単射になる。
+
+
+
+$(3)$すると、先の命題より、逆関数
+
+
+
+$$
+
+f^{-1}: f(X) \rightarrow \mathbb{R}
+
+$$
+
+
+
+が存在することが保証される。
+
+
+
+&&&prop (単射が生成する全単射)
+
+$(1)$関数$f: \mathbb{R} \supset X \rightarrow \mathbb{R}$が単射である場合には$f: \mathbb{R} \supset X \rightarrow f(X)$は全単射であるため、逆関数$f^{-1}: f(X) \rightarrow X$が存在する。
+
+
+
+$(2)$ただし、$f(X)$は$f$の値域である。
+
+&&&
+
+
+
+
+
+&&&ex (単射が生成する全単射)
+
+$(1)$関数$f: \mathbb{R}_{+} \rightarrow \mathbb{R}$はそれぞれの$x \in \mathbb{R}_{+}$に対して、
+
+
+
+$$
+
+f(x)=x^2
+
+$$
+
+
+
+を定めるものとする。
+
+
+
+$(2)$ただし、$f$の定義域である$\mathbb{R}_{+}$はすべての非負の実数からなる集合である。
+
+
+
+$(3)$$f$は単射である一方で全射ではなく、したがって逆関数
+
+
+
+$$
+
+f^{-1}: \mathbb{R} \rightarrow \mathbb{R}_{+}
+
+$$
+
+
+
+は存在しない。
+
+
+
+$(4)$$f$の終集合を値域
+
+
+
+$$
+
+\begin{aligned}
+
+f\left(\mathbb{R}_{+}\right) & =\left\{f(x) \in \mathbb{R} \mid x \in \mathbb{R}_{+}\right\} \\
+
+& =\left\{x^2 \in \mathbb{R} \mid x \in \mathbb{R}_{+}\right\} \\
+
+& =\mathbb{R}_{+}
+
+\end{aligned}
+
+$$
+
+
+
+に制限して$f: \mathbb{R}_{+} \rightarrow f\left(\mathbb{R}_{+}\right)$すなわち$f: \mathbb{R}_{+} \rightarrow \mathbb{R}_{+}$とすればこれは全単射になる。
+
+
+
+$(5)$したがって、逆関数
+
+
+
+$$
+
+f^{-1}: \mathbb{R}_{+} \rightarrow \mathbb{R}_{+}
+
+$$
+
+
+
+が存在するはずである。
+
+
+
+$(6)$実際、$f$によるそれぞれの$y \in \mathbb{R}_{+}$の逆像は、
+
+
+
+$$
+
+\begin{aligned}
+
+f^{-1}(y) & =\left\{x \in \mathbb{R}_{+} \mid y=f(x)\right\} \quad \because \text { 逆像の定義 } \\
+
+& =\left\{x \in \mathbb{R}_{+} \mid y=x^2\right\} \quad \because f \text { の定義 } \\
+
+& =\{\sqrt{y}\} \quad \because y \in \mathbb{R}_{+}
+
+\end{aligned}
+
+$$
+
+
+
+だが、これは1点集合であるため逆関数$f^{-1}: \mathbb{R}_{+} \rightarrow \mathbb{R}_{+}$が存在し、これはそれぞれの$y \in \mathbb{R}_{+}$に対して、
+
+
+
+$$
+
+f^{-1}(y)=\sqrt{y}
+
+$$
+
+
+
+を定める。
+
+&&&
+
+
+
+$(1)$先の命題より以下が導かれる。
+
+
+
+&&&prop (全単射と逆関数)
+
+$(1)$関数$f: \mathbb{R} \supset X \rightarrow \mathbb{R}$が単射であることと、逆関数$f^{-1}: f(X) \rightarrow X$が存在することは必要十分である。
+
+
+
+$(2)$ただし、$f(X)$は$f$の値域である。
+
+&&&
+
+
+
+# 逆関数の定義域と値域
+
+$(1)$関数$f$の逆関数$f^{-1}$が存在する場合、関数$f$の定義域と逆関数$f^{-1}$の値域が一致し、関数$f$の値域と逆関数$f^{-1}$の定義域が一致することが保証される。
+
+
+
+&&&prop (逆関数の定義域と値域)
+
+$(1)$関数$f$に対して、その逆関数$f^{-1}$が存在する場合、以下の関係
+
+
+
+$$
+
+\begin{aligned}
+
+& \text { (a) } D(f)=R\left(f^{-1}\right) \\
+
+& \text { (b) } R(f)=D\left(f^{-1}\right)
+
+\end{aligned}
+
+$$
+
+
+
+がともに成り立つ。
+
+
+
+$(2)$ただし、$D(f), D\left(f^{-1}\right)$は$f, f^{-1}$の定義域であり、$R(f), R\left(f^{-1}\right)$は$f, f^{-1}$の値域である。
+
+&&&
+
+
+
+&&&ex (逆関数の定義域と値域)
+
+$(1)$関数$f: \mathbb{R} \rightarrow \mathbb{R}$はそれぞれの$x \in \mathbb{R}$に対して、
+
+
+
+$$
+
+f(x)=\frac{1}{2} x
+
+$$
+
+
+
+を像として定めるものとする。
+
+
+
+$(2)$$f$の定義域は、
+
+
+
+$$
+
+\begin{aligned}
+
+D(f) & =\{x \in \mathbb{R} \mid f(x) \in \mathbb{R}\} \quad \because D(f) \text { の定義 } \\
+
+& =\left\{x \in \mathbb{R} \left\lvert\, \frac{1}{2} x \in \mathbb{R}\right.\right\} \quad \because f \text { の定義 } \\
+
+& =\mathbb{R}
+
+\end{aligned}
+
+$$
+
+
+
+であり、$f$の値域は、
+
+
+
+$$
+
+\begin{aligned}
+
+R(f) & =\{f(x) \in \mathbb{R} \mid x \in \mathbb{R}\} \quad \because R(f) \text { の定義 } \\
+
+& =\left\{\left.\frac{1}{2} x \in \mathbb{R} \right\rvert\, x \in \mathbb{R}\right\} \\
+
+& =\mathbb{R}
+
+\end{aligned}
+
+$$
+
+
+
+である。
+
+
+
+$(3)$$f$の逆写像$f^{-1}: \mathbb{R} \rightarrow \mathbb{R}$が存在し、それぞれの$y \in \mathbb{R}$に対して、
+
+
+
+$$
+
+f^{-1}(y)=2 y
+
+$$
+
+
+
+を像として定める。
+
+
+
+$(4)$$f^{-1}$の定義域は、
+
+
+
+$$
+
+\begin{aligned}
+
+D\left(f^{-1}\right) & =\left\{y \in \mathbb{R} \mid f^{-1}(y) \in \mathbb{R}\right\} \\
+
+& =\{y \in \mathbb{R} \mid 2 y \in \mathbb{R}\} \\
+
+& =\mathbb{R}
+
+\end{aligned}
+
+$$
+
+
+
+であり、$f^{-1}$の値域は、
+
+
+
+$$
+
+\begin{aligned}
+
+R\left(f^{-1}\right) & =\left\{f^{-1}(y) \in \mathbb{R} \mid y \in \mathbb{R}\right\} \\
+
+& =\{2 y \in \mathbb{R} \mid y \in \mathbb{R}\} \\
+
+& =\mathbb{R}
+
+\end{aligned}
+
+$$
+
+
+
+である。
+
+
+
+$(5)$したがって、
+
+
+
+$(a)D(f)=R\left(f^{-1}\right)$
+
+
+
+$(b)R(f)=D\left(f^{-1}\right)$
+
+
+
+がともに成り立つが、これは先の命題の主張と整合的である。
+
+&&&
+
+
+
+# 逆関数の求め方
+
+$(1)$関数$f: \mathbb{R} \supset X \rightarrow \mathbb{R}$の逆関数$f^{-1}$を具体的に求めるためにはどうすればいいだろうか。
+
+
+
+$(2)$先の命題より、関数$f$と逆関数$f^{-1}$の定義域と値域はそれぞれ、
+
+
+
+$$
+
+\begin{array}{r}
+
+f: X \rightarrow f(X) \\
+
+f^{-1}: f(X) \rightarrow X
+
+\end{array}
+
+$$
+
+
+
+と定まる。
+
+
+
+$(3)$加えて、逆関数の定義にしたがうのであれば、関数$f$による値域の要素$y \in f(X)$の逆像
+
+
+
+$$
+
+f^{-1}(y)=\{x \in X \mid y=f(x)\}
+
+$$
+
+
+
+を具体的に求めた上で、それが1点集合であることを確認することになる。
+
+
+
+$(4)$その上で、この集合$f^{-1}(y)$の唯一の要素を逆写像$f^{-1}$による$y$の像として採用することになる。
+
+
+
+$(5)$もう少し簡単に逆関数を求めることもできる。
+
+
+
+$(6)$その際に以下の命題が役に立つ。
+
+
+
+&&&prop (逆関数の特徴づけ)
+
+$(1)$関数$f: X \rightarrow f(X)$の逆関数$f^{-1}: f(X) \rightarrow X$が存在するものとする。
+
+
+
+$(2)$この場合、任意の順序対$(x, y) \in X \times f(X)$について以下の関係
+
+
+
+$$
+
+f(x)=y \Leftrightarrow f^{-1}(y)=x
+
+$$
+
+
+
+が成り立つ。
+
+&&&
+
+
+
+$(1)$以上の命題より、関数$f$による$x$の像が$y$であることと、逆関数$f^{-1}$による$y$の像が$x$であることは必要十分であることが明らかになった。
+
+
+
+$(2)$以上の事実を用いると、比較的容易に関数の逆関数を求めることができる。
+
+
+
+$(3)$具体的には、関数$f$の具体的な形状$f(x)$が明らかになっている場合、便宜的に、
+
+
+
+$$
+
+y=f(x)
+
+$$
+
+
+
+とおけば、上の命題より、これは以下の関係
+
+
+
+$$
+
+x=f^{-1}(y)
+
+$$
+
+
+
+と必要十分であることが保証される。
+
+
+
+$(4)$したがって、$y=f(x)$を$x$について解けば逆写像の具体的な形状$f^{-1}(y)$が明らかになる。
+
+
+
+$(5)$逆関数を特定する手順を改めて整理すると以下のようになる。
+
+
+
+$1.$関数$f: \mathbb{R} \supset X \rightarrow \mathbb{R}$の値域$f(X)$を特定した上で、終集合を値域に制限した関数$f: \mathbb{R} \supset X \rightarrow f(X)$が全単射であることを確認する。
+
+
+
+このとき、逆関数$f^{-1}: \mathbb{R} \supset f(X) \rightarrow X$が存在する。
+
+
+
+$2.$逆関数$f^{-1}$ の形状 $f^{-1}(y)$を特定する。
+
+
+
+つまり、$y=f(x)$とおいた上で、これを$x$について解いて$x=f^{-1}(y)$を得る。
+
+
+
+得られた結果$f^{-1}(y)$は逆関数$f^{-1}$の具体的な形状である。
+
+
+
+&&&ex (逆関数)
+
+$(1)$関数$f: \mathbb{R} \rightarrow \mathbb{R}$はそれぞれの$x \in \mathbb{R}$に対して、
+
+
+
+$$
+
+f(x)=\frac{1}{2} x
+
+$$
+
+
+
+を定めるものとする。
+
+
+
+$(2)$$f$の値域は、
+
+
+
+$$
+
+\begin{aligned}
+
+f(\mathbb{R}) & =\{f(x) \in \mathbb{R} \mid x \in \mathbb{R}\} \\
+
+& =\left\{\left.\frac{1}{2} x \in \mathbb{R} \right\rvert\, x \in \mathbb{R}\right\} \\
+
+& =\mathbb{R}
+
+\end{aligned}
+
+$$
+
+
+
+である。
+
+
+
+$(3)$さらに、$f$は単射であるため逆関数$f^{-1}: \mathbb{R} \rightarrow \mathbb{R}$が存在する。
+
+
+
+$(4)$逆関数$f^{-1}$の形状を特定するために、
+
+
+
+$$
+
+y=f(x)
+
+$$
+
+
+
+すなわち、
+
+
+
+$$
+
+y=\frac{1}{2} x
+
+$$
+
+
+
+とおいた上で、これを$x$について解くと、
+
+
+
+$$
+
+x=2 y
+
+$$
+
+
+
+を得るため、
+
+
+
+$$
+
+f^{-1}(y)=2 y
+
+$$
+
+
+
+となる。
+
+
+
+$(5)$以上より、$f$の逆写像$f^{-1}: \mathbb{R} \rightarrow \mathbb{R}$はそれぞれの$y \in \mathbb{R}$に対して、
+
+
+
+$$
+
+f^{-1}(y)=2 y
+
+$$
+
+
+
+を定めることが明らかになった。
+
+&&&
+
+
+
+&&&ex (逆関数)
+
+$(1)$関数$f: \mathbb{Z} \rightarrow \mathbb{Z}$はそれぞれの$x \in \mathbb{Z}$に対して、
+
+
+
+$$
+
+f(x)=2 x
+
+$$
+
+
+
+を像として定めるものとする。
+
+
+
+$(2)$先に明らかになったように逆写像$f^{-1}: \mathbb{Z} \rightarrow \mathbb{Z}$は存在しない。
+
+
+
+$(3)$$f$の値域は、
+
+
+
+$$
+
+\begin{aligned}
+
+f(\mathbb{Z}) & =\{f(x) \in \mathbb{Z} \mid x \in \mathbb{Z}\} \\
+
+& =\{2 x \in \mathbb{Z} \mid x \in \mathbb{Z}\} \\
+
+& =E
+
+\end{aligned}
+
+$$
+
+
+
+である。
+
+
+
+$(4)$ただし、$E$はすべての偶数からなる集合である。
+
+
+
+$(5)$さらに、$f$は単射であるため、$f$の集合を値域に制限して、
+
+
+
+$$
+
+f: \mathbb{Z} \rightarrow E
+
+$$
+
+
+
+とすれば、逆関数
+
+
+
+$$
+
+f^{-1}: E \rightarrow \mathbb{Z}
+
+$$
+
+
+
+が存在する。
+
+
+
+$(6)$逆関数$f^{-1}$の形状を特定するために、
+
+
+
+$$
+
+y=f(x)
+
+$$
+
+
+
+すなわち、
+
+
+
+$$
+
+y=2 x
+
+$$
+
+
+
+とおいた上で、これを$x$について解くと、
+
+
+
+$$
+
+x=\frac{y}{2}
+
+$$
+
+
+
+を得るため、
+
+
+
+$$
+
+f^{-1}(y)=\frac{y}{2}
+
+$$
+
+
+
+となる。
+
+
+
+$(7)$以上より、$f$の逆写像$f^{-1}: E \rightarrow \mathbb{Z}$はそれぞれの$y \in E$に対して、
+
+
+
+$$
+
+f^{-1}(y)=\frac{y}{2}
+
+$$
+
+
+
+を定めることが明らかになった。
+
+&&&
+
+
+
+# 合成関数を用いた逆関数であることの判定
+
+$(1)$関数$f$が与えられた状況において、その逆関数$f^{-1}$を特定する方法について解説しました。
+
+
+
+$(2)$では、関数$f$に加えて、その逆写像の候補であるような関数$g$が与えられた場合、$g$が実際に$f$の逆関数であるか判定するためにはどうすればよいだろうか。
+
+
+
+$(3)$$g$は$f$の逆関数の候補であるため、両者の始集合と終集合の立場が逆転していることに注意。
+
+
+
+$(4)$集合$X \subset \mathbb{R}$に加えて2つの関数
+
+
+
+$$
+
+\begin{aligned}
+
+& f: X \rightarrow f(X) \\
+
+& g: f(X) \rightarrow X
+
+\end{aligned}
+
+$$
+
+
+
+が与えられているものとする。
+
+
+
+$(5)$この場合、2つの合成写像
+
+
+
+$$
+
+\begin{aligned}
+
+& g \circ f: X \rightarrow X \\
+
+& f \circ g: f(X) \rightarrow f(X)
+
+\end{aligned}
+
+$$
+
+
+
+が定義可能だが、これらがともに恒等写像であることは、すなわち、以下の2つの条件
+
+
+
+$$
+
+\begin{aligned}
+
+& \forall x \in X:(g \circ f)(x)=x \\
+
+& \forall y \in f(X):(f \circ g)(y)=y
+
+\end{aligned}
+
+$$
+
+
+
+がともに成り立つ場合には、$f$と$g$はお互いに相手の逆関数であることが保証される。
+
+
+
+&&&prop (合成関数を用いた逆関数であることの判定)
+
+$(1)$集合$X \subset \mathbb{R}$に加えて2つの関数
+
+
+
+$$
+
+\begin{aligned}
+
+& f: X \rightarrow f(X) \\
+
+& g: f(X) \rightarrow X
+
+\end{aligned}
+
+$$
+
+
+
+が与えられたとき、以下の2つの条件
+
+
+
+$$
+
+\begin{aligned}
+
+& \forall x \in X:(g \circ f)(x)=x \\
+
+& \forall y \in f(X):(f \circ g)(y)=y
+
+\end{aligned}
+
+$$
+
+
+
+がともに成り立つ場合には、
+
+
+
+$$
+
+\begin{aligned}
+
+& f^{-1}=g \\
+
+& g^{-1}=f
+
+\end{aligned}
+
+$$
+
+
+
+がともに成り立つ。
+
+&&&
+
+
+
+&&&ex (合成関数を用いた逆関数であることの判定)
+
+$(1)$写像$f: \mathbb{R} \rightarrow \mathbb{R}$はそれぞれの$x \in \mathbb{R}$に対して、
+
+
+
+$$
+
+f(x)=\frac{x}{4}-8
+
+$$
+
+
+
+を定め、写像$g: \mathbb{R} \rightarrow \mathbb{R}$はそれぞれの$x \in \mathbb{R}$に対して、
+
+
+
+$$
+
+g(x)=4 x+32
+
+$$
+
+
+
+を定めるものとする。
+
+
+
+$(2)$$f$の値域は、
+
+
+
+$$
+
+\begin{aligned}
+
+f(\mathbb{R}) & =\{f(x) \in \mathbb{R} \mid x \in \mathbb{R}\} \\
+
+& =\left\{\left.\frac{x}{4}-8 \in \mathbb{R} \right\rvert\, x \in \mathbb{R}\right\} \\
+
+& =\mathbb{R}
+
+\end{aligned}
+
+$$
+
+
+
+であり、これは$g$の定義域と一致する。
+
+
+
+$(3)$$x \in \mathbb{R}$を任意に選んだとき、
+
+
+
+$$
+
+\begin{aligned}
+
+(g \circ f)(x) & =g(f(x)) \\
+
+& =g\left(\frac{x}{4}-8\right) \quad \because f \text { の定義 } \\
+
+& =4\left(\frac{x}{4}-8\right)+32 \quad \because g \text { の定義 } \\
+
+& =x-32+32 \\
+
+& =x
+
+\end{aligned}
+
+$$
+
+
+
+であり、
+
+
+
+$$
+
+\begin{aligned}
+
+(f \circ g)(x) & =f(g(x)) \\
+
+& =f(4 x+32) \quad \because g \text { の定義 } \\
+
+& =\frac{4 x+32}{4}-8 \quad \because f \text { の定義 } \\
+
+& =x+8-8 \\
+
+& =x
+
+\end{aligned}
+
+$$
+
+
+
+であるため、先の命題より$f$と$g$はお互いに相手の逆写像である。
+
+
+
+$(4)$つまり、
+
+
+
+$$
+
+\begin{aligned}
+
+f^{-1} & =g \\
+
+g^{-1} & =f
+
+\end{aligned}
+
+$$
+
+
+
+がともに成り立つ。
+
+&&&
+
+
+
+# 逆関数の逆関数
+
+$(1)$関数$f$の逆関数$f^{-1}$が存在する場合には、さらにその逆関数$\left(f^{-1}\right)^{-1}$が存在し、これはもとの関数$f$と一致することが保証される。
+
+
+
+$(2)$つまり、逆関数の逆関数はもとの関数に等しいということである。
+
+
+
+&&&prop (逆関数の逆関数)
+
+$(1)$関数$f: \mathbb{R} \supset X \rightarrow f(X)$の逆関数$f^{-1}: \mathbb{R} \supset f(X) \rightarrow X$が存在する場合には、さらにその逆関数$\left(f^{-1}\right)^{-1}: \mathbb{R} \supset X \rightarrow f(X)$が存在して、
+
+
+
+$$
+
+\left(f^{-1}\right)^{-1}=f
+
+$$
+
+
+
+が成り立つ。
+
+&&&
+
+
+
+$(1)$2つの関数
+
+
+
+$$
+
+\begin{aligned}
+
+& f: X \rightarrow f(X) \\
+
+& g: f(X) \rightarrow X
+
+\end{aligned}
+
+$$
+
+
+
+が与えられているものとする。
+
+
+
+$(2)$$f$と$g$は定義域と値域が逆になっていることに注意。
+
+
+
+$(3)$$g$が$f$の逆関数であるものとする。
+
+
+
+$(4)$つまり、
+
+
+
+$$
+
+g=f^{-1}
+
+$$
+
+
+
+が成り立つということである。
+
+
+
+$(5)$この場合、先の命題より、
+
+
+
+$$
+
+\left(f^{-1}\right)^{-1}=f
+
+$$
+
+
+
+すなわち、
+
+
+
+$$
+
+g^{-1}=f
+
+$$
+
+
+
+となるため、以上の事実は$f$が$g$の逆関数であることを意味する。
+
+
+
+$(6)$以上より、$g$が$f$の逆関数である場合には、逆に$f$は$g$の逆関数であることが明らかになった。
+
+
+
+$(7)$$f$と$g$の立場を逆にしても同様の主張が成り立つ。
+
+
+
+$(8)$したがって、$f$が$g$の逆関数である場合には、逆に$g$は$f$の逆関数である。
+
+
+
+$(9)$したがって以下の命題を得る。
+
+
+
+&&&prop (関数と逆関数の関係)
+
+$(1)$集合$X \subset \mathbb{R}$に加えて2つの関数
+
+
+
+$$
+
+\begin{aligned}
+
+& f: X \rightarrow f(X) \\
+
+& g: f(X) \rightarrow X
+
+\end{aligned}
+
+$$
+
+
+
+が与えられたとき、以下の関係
+
+
+
+$f$は$g$の逆写像$\Leftrightarrow g$は$f$の逆写像
+
+
+
+が成り立つ。
+
+&&&
+
+
+
+# 合成関数の逆関数
+
+$(1)$集合$X, Y \subset \mathbb{R}$に加えて2つの関数
+
+
+
+$$
+
+\begin{aligned}
+
+& f: X \rightarrow f(X) \\
+
+& g: Y \rightarrow g(Y)
+
+\end{aligned}
+
+$$
+
+
+
+が与えられているものとする。
+
+
+
+$(2)$以下の関係
+
+
+
+$$
+
+f(X)=Y
+
+$$
+
+
+
+が成り立つ場合には合成関数
+
+
+
+$$
+
+g \circ f: \mathbb{R} \subset X \rightarrow g(Y)
+
+$$
+
+
+
+が定義可能である。
+
+
+
+$(3)$与えられた関数$f, g$の逆関数
+
+
+
+$$
+
+\begin{aligned}
+
+& f^{-1}: f(X) \rightarrow X \\
+
+& g^{-1}: g(Y) \rightarrow Y
+
+\end{aligned}
+
+$$
+
+
+
+が存在する場合、$(2)$のもとでは合成写像
+
+
+
+$$
+
+f^{-1} \circ g^{-1}: g(Y) \rightarrow X
+
+$$
+
+
+
+もまた定義可能である。
+
+
+
+$(4)$以上の条件のもとでは合成関数$g \circ f$の逆関数
+
+
+
+$$
+
+(g \circ f)^{-1}: g(Y) \rightarrow X
+
+$$
+
+
+
+が存在することが保証されるとともに、以下の関係
+
+
+
+$$
+
+(g \circ f)^{-1}=f^{-1} \circ g^{-1}
+
+$$
+
+
+
+が成り立つことが保証される。
+
+
+
+$(5)$つまり、合成関数の逆関数は、個々の関数の逆関数の合成と一致する。
+
+
+
+&&&prop (合成関数の逆関数)
+
+$(1)$集合$X, Y \subset \mathbb{R}$に加えて2つの関数
+
+
+
+$$
+
+\begin{aligned}
+
+& f: X \rightarrow f(X) \\
+
+& g: Y \rightarrow g(Y)
+
+\end{aligned}
+
+$$
+
+
+
+が与えられており、さらに、
+
+
+
+$$
+
+f(X)=Y
+
+$$
+
+
+
+が成り立つものとする。
+
+
+
+$(2)$この場合、合成関数
+
+
+
+$$
+
+g \circ f: \mathbb{R} \subset X \rightarrow g(Y)
+
+$$
+
+
+
+が存在する。
+
+
+
+$(3)$加えて、$f$と$g$の逆関数
+
+
+
+$$
+
+\begin{aligned}
+
+& f^{-1}: f(X) \rightarrow X \\
+
+& g^{-1}: g(Y) \rightarrow Y
+
+\end{aligned}
+
+$$
+
+
+
+がともに存在するならば、合成関数
+
+
+
+$$
+
+f^{-1} \circ g^{-1}: g(Y) \rightarrow X
+
+$$
+
+
+
+が存在する。
+
+
+
+$(4)$以上の条件のもとでは、逆関数
+
+
+
+$$
+
+(g \circ f)^{-1}: g(Y) \rightarrow X
+
+$$
+
+
+
+が存在するとともに、
+
+
+
+$$
+
+(g \circ f)^{-1}=f^{-1} \circ g^{-1}
+
+$$
+
+
+
+が成り立つ。
+
+&&&
+
+
+
+# 逆関数は全単射
+
+$(1)$関数$f$の逆関数$f^{-1}$が存在する場合、これは全単射になることが保証される。
+
+
+
+&&&prop (逆関数は全单射)
+
+$(1)$関数$f: \mathbb{R} \supset X \rightarrow f(X)$の逆関数$f^{-1}: \mathbb{R} \subset f(X) \rightarrow X$が存在する場合、$f^{-1}$は全単射である。
+
+&&&
