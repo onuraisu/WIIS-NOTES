@@ -1,0 +1,194 @@
+# リンデレーフの被覆定理
+
+$(1)$実数空間の部分集合$A \subset \mathbb{R}$が与えられた状況において、その開被覆$\left\{A_\lambda\right\}_{\lambda \in \Lambda}$を任意に選ぶ。
+
+
+
+$(2)$つまり、
+
+
+
+$(a)\forall \lambda \in \Lambda: A_\lambda \in \mathcal{O}(\mathbb{R})$
+
+$(b)A \subset \bigcup_{\lambda \in \Lambda} A_\lambda$
+
+
+
+が成り立つということである。
+
+
+
+$(3)$ただし、$\mathcal{O}(\mathbb{R})$は$\mathbb{R}$の開集合系である。
+
+
+
+$(4)$$A$が$\mathbb{R}$上のコンパクト集合である場合には$\left\{A_\lambda\right\}_{\lambda \in \Lambda}$の有限部分被覆が存在することが保証される。
+
+
+
+$(5)$つまり、
+
+
+
+$(c)\exists n \in \mathbb{N}: \lambda_1, \cdots, \lambda_n \in \Lambda$
+
+$(d)A \subset \bigcup_{i=1}^n A_{\lambda_i}$
+
+
+
+が成り立つ。
+
+
+
+$(6)$$A$がコンパクト集合である場合には、開被覆$\left\{A_\lambda\right\}_{\lambda \in \Lambda}$の要素である開集合によって$A$を覆ったつもりでも、実は、$\left\{A_\lambda\right\}_{\lambda \in \Lambda}$の要素である有限個の開集合によって$A$を覆えていることが保証されるということである。
+
+
+
+$(7)$では、集合$A$がコンパクトであるとは限らない場合にも、その被覆に関して何らかの主張が可能なのだろうか。
+
+
+
+$(8)$実数空間$\mathbb{R}$は第2可算公理を満たすため、以下の条件
+
+
+
+$$
+
+\forall A \in \mathcal{O}(\mathbb{R}), \exists \mathfrak{A} \subset \mathfrak{B}: A=\bigcup \mathfrak{A}
+
+$$
+
+
+
+を満たす可算な基本開集合系$\mathfrak{B} \subset \mathcal{O}(\mathbb{R})$が存在する。
+
+
+
+$(9)$集合$A \subset \mathbb{R}$を任意に選ぶ。
+
+
+
+$(10)$ただし、$A$は$\mathbb{R}$上のコンパクト集合である必要はない。
+
+
+
+$(11)$その上で、集合$A$の開被覆$\left\{A_\lambda\right\}_{\lambda \in \Lambda}$を任意に選んだとき、$\left\{A_\lambda\right\}_{\lambda \in \Lambda}$の可算部分被覆が必ず存在することが第2可算公理より導かれる。
+
+
+
+$(12)$つまり、以下の条件
+
+
+
+$$
+
+\begin{aligned}
+
+& \text { (a) } \forall \lambda \in \Lambda: A_\lambda \in \mathcal{O}(\mathbb{R}) \\
+
+& \text { (b) } A \subset \bigcup_{\lambda \in \Lambda} A_\lambda
+
+\end{aligned}
+
+$$
+
+
+
+を満たす$\left\{A_\lambda\right\}_{\lambda \in \Lambda}$を任意に選んだとき、それに対して可算個の添字$\lambda_1, \lambda_2, \cdots \in \Lambda$が存在して、
+
+
+
+$$
+
+A \subset \bigcup_{i \in \mathbb{N}} A_{\lambda_i}
+
+$$
+
+
+
+とすることができるということである。
+
+
+
+$(13)$以上の命題を**リンデレーフの被覆定理**(Lindelöf＇s covering theorem)と呼ぶ。
+
+
+
+$(14)$ちなみに、エルンスト・レナード・リンデレフ(Ernst Leonard Lindelöf＇s) はフィンランドの数学者である。
+
+
+
+&&&prop (リンデレーフの被覆定理)
+
+$(1)$集合$A \subset \mathbb{R}$およびその開被覆$\left\{A_\lambda\right\}_{\lambda \in \Lambda}$を任意に選んだとき、$\left\{A_\lambda\right\}_{\lambda \in \Lambda}$の可算部分被覆が存在することが保証される。
+
+&&&
+
+
+
+$(1)$一般に、位相空間$X$において、任意の開被覆が可算部分被覆を持つ場合、そのような位相空間$X$をリンデレ一フ空間(Lindelöf＇s space)と呼ぶ。
+
+
+
+$(2)$先の命題は、ユークリッド距離を導入した実数空間$\mathbb{R}$がリンデレーフ空間であることを主張している。
+
+
+
+&&&ex (開集合は可算個の開区間の和集合として表すことができる)
+
+$(1)$実数空間における開集合$A \in \mathcal{O}(\mathbb{R})$を任意に選んだとき、これを可算個の開区間の和集合として表すことができる。
+
+
+
+$(2)$証明ではリンデレーフの被覆定理を利用する。
+
+&&&
+
+
+
+# 可算な基本開集合系の生成
+
+$(1)$実数空間$\mathbb{R}$における開集合系$\mathcal{O}(\mathbb{R})$の基本開集合系$\mathfrak{B}$を任意に選ぶ。
+
+
+
+$(2)$つまり、以下の条件
+
+
+
+$$
+
+\forall A \in \mathcal{O}(\mathbb{R}), \exists \mathfrak{B}^{\prime} \subset \mathfrak{B}: A=\bigcup \mathfrak{B}^{\prime}
+
+$$
+
+
+
+を満たす開集合族$\mathfrak{B} \subset \mathcal{O}(\mathbb{R})$を任意に選ぶということである。
+
+
+
+$(3)$以上の事実は、$\mathbb{R}$における任意の開集合$A$が$\mathfrak{B}$の要素の和集合として表現可能であることを意味する。
+
+
+
+$(4)$$\mathbb{R}$は第2可算公理を満たすため、可算集合であるような基本開集合系$\mathfrak{B}$が存在する。
+
+
+
+$(5)$加えて、第2可算公理を踏まえると、可算集合であるとは限らない基本開集合系$\mathfrak{B}$が与えられたとき、そこから可算集合であるような基本開集合系を常に生成できる。
+
+
+
+$(6)$つまり、どのような基本開集合系$\mathfrak{B}$を選んだ場合でも、結局、$\mathbb{R}$における任意の開集合$A$が$\mathfrak{B}$の可算個の要素の和集合として表せるということである。
+
+
+
+&&&prop (可算な基本開集合系の生成)
+
+$(1)$実数空間$\mathbb{R}$における開集合系$\mathcal{O}(\mathbb{R})$の基本開集合系$\mathfrak{B}$を任意に選んだとき、そこから可算集合であるような基本開集合系を生成できる。
+
+&&&
+
+
+
