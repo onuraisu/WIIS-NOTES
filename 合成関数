@@ -1,0 +1,1529 @@
+# 合成関数
+
+$(1)$2つの関数
+
+
+
+$$
+
+\begin{aligned}
+
+& f: \mathbb{R} \supset X \rightarrow \mathbb{R} \\
+
+& g: \mathbb{R} \supset Y \rightarrow \mathbb{R}
+
+\end{aligned}
+
+$$
+
+
+
+が与えられた状況を想定する。
+
+
+
+$(2)$ただし、$f$の値域が$g$の定義域の部分集合であるものとする。
+
+
+
+$(3)$つまり、
+
+
+
+$$
+
+f(X) \subset Y
+
+$$
+
+
+
+すなわち、
+
+
+
+$$
+
+\forall x \in X: f(x) \in Y
+
+$$
+
+
+
+が成り立つということである。
+
+
+
+$(4)$関数$f: \mathbb{R} \supset X \rightarrow \mathbb{R}$は定義域のそれぞれの要素$x \in X$に対して像
+
+
+
+$$
+
+f(x) \in f(X)
+
+$$
+
+
+
+を定めるが、$f$の値域$f(X)$はもう一方の関数$g: \mathbb{R} \supset Y \rightarrow \mathbb{R}$の定義域$Y$の部分集合であるため$f(x) \in Y$となる。
+
+
+
+$(5)$したがって関数$g$はこの要素$f(x) \in Y$に対して像
+
+
+
+$$
+
+g(f(x)) \in \mathbb{R}
+
+$$
+
+
+
+を定める。
+
+
+
+$(6)$このような事情を踏まえると、先のような2つの関数$f, g$が与えられた場合には、関数$f$の定義域のそれぞれの要素$x \in X$に対して、
+
+
+
+$$
+
+(g \circ f)(x)=g(f(x))
+
+$$
+
+
+
+を像として定める関数
+
+
+
+$$
+
+g \circ f: \mathbb{R} \supset X \rightarrow \mathbb{R}
+
+$$
+
+
+
+が定義可能である。
+
+
+
+$(7)$このような関数を$f$と$g$の**合成関数**(composite function)と呼ぶ。
+
+
+
+&&&ex (合成関数)
+
+$(1)$関数$f: \mathbb{R} \rightarrow \mathbb{R}$はそれぞれの$x \in \mathbb{R}$に対して、
+
+
+
+$$
+
+f(x)=x^2
+
+$$
+
+
+
+を定め、関数$g: \mathbb{R} \rightarrow \mathbb{R}$はそれぞれの$x \in \mathbb{R}$に対して、
+
+
+
+$$
+
+g(x)=x+2
+
+$$
+
+
+
+を定めるものとする。
+
+
+
+$(2)$$f$の値域は、
+
+
+
+$$
+
+\begin{aligned}
+
+f(\mathbb{R}) & =\{f(x) \in \mathbb{R} \mid x \in \mathbb{R}\} \\
+
+& =\left\{x^2 \in \mathbb{R} \mid x \in \mathbb{R}\right\} \\
+
+& =[0,+\infty)
+
+\end{aligned}
+
+$$
+
+
+
+だが、これはもう一方の関数$g$の定義域$\mathbb{R}$の部分集合であるため合成関数$g \circ f: \mathbb{R} \rightarrow \mathbb{R}$が定義可能であり、これはそれぞれの$x \in \mathbb{R}$に対して、
+
+
+
+$$
+
+\begin{aligned}
+
+(g \circ f)(x) & =g(f(x)) \quad \because g \circ f \text { の定義 } \\
+
+& =g\left(x^2\right) \quad \because f \text { の定義 } \\
+
+& =x^2+2 \quad \because g \text { の定義 }
+
+\end{aligned}
+
+$$
+
+
+
+を定める。
+
+
+
+$(3)$逆に、$g$の値域は、
+
+
+
+$$
+
+\begin{aligned}
+
+g(\mathbb{R}) & =\{g(x) \in \mathbb{R} \mid x \in \mathbb{R}\} \\
+
+& =\{x+2 \in \mathbb{R} \mid x \in \mathbb{R}\} \\
+
+& =\mathbb{R}
+
+\end{aligned}
+
+$$
+
+
+
+だが、これはもう一方の関数$f$の定義域$\mathbb{R}$の部分集合であるため合成関数$f \circ g: \mathbb{R} \rightarrow \mathbb{R}$が定義可能であり、これはそれぞれの$x \in \mathbb{R}$に対して、
+
+
+
+$$
+
+\begin{aligned}
+
+(f \circ g)(x) & =f(g(x)) \quad \because f \circ g \text { の定義 } \\
+
+& =f(x+2) \quad \because g \text { の定義 } \\
+
+& =(x+2)^2 \quad \because f \text { の定義 }
+
+\end{aligned}
+
+$$
+
+
+
+を定める。
+
+
+
+$(4)$2つの関数$f, g$の合成関数としては$g \circ f$と$g \circ f$の2種類が存在するが、この例が示唆するように、両者は関数として一致するとは限らない。
+
+
+
+$(5)$関数を合成する際には順番に注意する必要がある。
+
+&&&
+
+
+
+&&&ex (合成関数)
+
+$(1)$長さの単位は様々である。
+
+
+
+$(2)$尺貫法の単位である「寸」と国産単位系の単位である「センチメートル (cm)」の間には以下の関係
+
+
+
+$$
+
+1 \text { 寸 }=3.0303 \text { センチメートル }
+
+$$
+
+
+
+が成り立つ。
+
+
+
+$(3)$したがって、$x$寸をセンチメートルで表現すると、
+
+
+
+$$
+
+f(x)=3.0303 x
+
+$$
+
+
+
+となる。
+
+
+
+$(4)$つまり、$f$は「寸」を「センチメートル」に変換する関数である。
+
+
+
+$(5)$また、国産単位系の単位である「センチメートル(cm)」とヤード・ポンド法の単位である「インチ(in)」の間には以下の関係
+
+
+
+$$
+
+1 \text { インチ }=2.54 \text { センチメートル }
+
+$$
+
+
+
+が成り立つ。
+
+
+
+$(6)$したがって、$x$センチメートルをインチで表現すると、
+
+
+
+$$
+
+g(x)=\frac{1}{2.54} x
+
+$$
+
+
+
+となる。
+
+
+
+$(7)$つまり、$g$は「センチメートル」を「インチ」に変換する関数である。
+
+
+
+$(8)$合成関数$g \circ f$はそれぞれの$x$に対して、
+
+
+
+$$
+
+\begin{aligned}
+
+(g \circ f)(x) & =g(f(x)) \\
+
+& =\frac{1}{2.54} f(x) \quad \because \text { 合成関数の定義および }(6) \\
+
+& =\frac{3.0303}{2.54} x \quad \because(3) \\
+
+& =1.193 x
+
+\end{aligned}
+
+$$
+
+
+
+を定めるが、これは「寸」を「インチ」に変換する関数である。
+
+&&&
+
+
+
+&&&ex (合成関数)
+
+$(1)$車を$t \geq 0$時間走行させるために必要なガソリンの量が、
+
+
+
+$$
+
+f(t)=\frac{t}{2}
+
+$$
+
+
+
+であるものとする。
+
+
+
+$(2)$また、ガソリンを$x \geq 0$だけ購入するために必要な燃料費が、
+
+
+
+$$
+
+g(x)=100 x
+
+$$
+
+
+
+であるものとする。
+
+
+
+$(3)$合成関数$g \circ f$はそれぞれの$t \geq 0$に対して、
+
+
+
+$$
+
+\begin{array}{rlrl}
+
+(g \circ f)(t) & =g(f(t)) & \because \text { 合成関数の定義 } \\
+
+& =g\left(\frac{t}{2}\right) & \because f \text { の定義 } \\
+
+& =100 \cdot \frac{t}{2} & \because g \text { の定義 } \\
+
+& =50 t
+
+\end{array}
+
+$$
+
+
+
+を定めるが、これは車を$t$時間走行させるために必要な燃料費を特定する関数である。
+
+&&&
+
+
+
+&&&ex (合成関数)
+
+$(1)$時間が$t \geq 0$だけ経過した時点における円の半径が、
+
+
+
+$$
+
+f(t)=5 t
+
+$$
+
+
+
+であるものとする。
+
+
+
+$(2)$また、半径$r \geq 0$の円の面積は、
+
+
+
+$$
+
+g(r)=\pi r^2
+
+$$
+
+
+
+である。
+
+
+
+$(3)$合成関数$g \circ f$はそれぞれの$t \geq 0$に対して、
+
+
+
+$$
+
+\begin{array}{rlr}
+
+(g \circ f)(t) & =g(f(t)) & \because \text { 合成関数の定義 } \\
+
+& =g(5 t) & \because f \text { の定義 } \\
+
+& =\pi(5 t)^2 & \because g \text { の定義 } \\
+
+& =25 \pi t^2
+
+\end{array}
+
+$$
+
+
+
+を定めるが、これは時間が$t$だけ経過した時点における円の面積を特定する関数である。
+
+&&&
+
+
+
+# 関数どうしは合成できるとは限らない
+
+$(1)$2つの関数
+
+
+
+$$
+
+\begin{aligned}
+
+& f: \mathbb{R} \supset X \rightarrow \mathbb{R} \\
+
+& g: \mathbb{R} \supset Y \rightarrow \mathbb{R}
+
+\end{aligned}
+
+$$
+
+
+
+が与えられた場合、合成関数
+
+
+
+$$
+
+g \circ f: \mathbb{R} \supset X \rightarrow \mathbb{R}
+
+$$
+
+
+
+を定義するためには、$f$の値域が$g$の定義域の部分集合である必要がある。
+
+
+
+$(2)$つまり、
+
+
+
+$$
+
+f(X) \subset Y
+
+$$
+
+
+
+すなわち、
+
+
+
+$$
+
+\forall x \in X: f(x) \in Y
+
+$$
+
+
+
+が成り立つ場合にのみ合成関数$g \circ f$は定義可能である。
+
+
+
+$(3)$以上の条件が満たされない場合、つまり、
+
+
+
+$$
+
+f(X) \not \subset Y
+
+$$
+
+
+
+すなわち、
+
+
+
+$$
+
+\exists x \in X: f(x) \notin Y
+
+$$
+
+
+
+が成り立つ場合には、合成関数$g \circ f$は定義不可能である。
+
+
+
+&&&ex (合成できない2つの関数)
+
+$(1)$関数$f: \mathbb{R} \backslash\{0\} \rightarrow \mathbb{R}$はそれぞれの$x \in \mathbb{R} \backslash\{0\}$に対して、
+
+
+
+$$
+
+f(x)=\frac{1}{x}
+
+$$
+
+
+
+を定める一方で、関数$g: \mathbb{R} \rightarrow \mathbb{R}$はそれぞれの$x \in \mathbb{R}$に対して、
+
+
+
+$$
+
+g(x)=x^2
+
+$$
+
+
+
+を定めるものとする。
+
+
+
+$(2)$$f$の値域は、
+
+
+
+$$
+
+\begin{aligned}
+
+R(\mathbb{R} \backslash\{0\}) & =\{f(x) \in \mathbb{R} \mid x \in \mathbb{R} \backslash\{0\}\} \\
+
+& =\left\{\left.\frac{1}{x} \in \mathbb{R} \right\rvert\, x \in \mathbb{R} \backslash\{0\}\right\} \\
+
+& =\mathbb{R} \backslash\{0\}
+
+\end{aligned}
+
+$$
+
+
+
+だが、これはもう一方の関数$g$の定義域$\mathbb{R}$の部分集合であるため合成関数
+
+
+
+$$
+
+g \circ f: \mathbb{R} \backslash\{0\} \rightarrow \mathbb{R}
+
+$$
+
+
+
+が定義可能であり、これはそれぞれの$x \in \mathbb{R} \backslash\{0\}$に対して、
+
+
+
+$$
+
+\begin{aligned}
+
+(g \circ f)(x) & =g(f(x)) \quad \because \text { 合成写像の定義 } \\
+
+& =g\left(\frac{1}{x}\right) \quad \because f \text { の定義 } \\
+
+& =\left(\frac{1}{x}\right)^2 \quad \because g \text { の定義 }
+
+\end{aligned}
+
+$$
+
+
+
+を定める。
+
+
+
+$(3)$その一方で、$g$の値域は、
+
+
+
+$$
+
+\begin{aligned}
+
+g(\mathbb{R}) & =\{g(x) \in \mathbb{R} \mid x \in \mathbb{R}\} \\
+
+& =\left\{x^2 \in \mathbb{R} \mid x \in \mathbb{R}\right\} \\
+
+& =[0,+\infty)
+
+\end{aligned}
+
+$$
+
+
+
+だが、これはもう一方の関数$f$の定義域$\mathbb{R} \backslash\{0\}$の部分集合ではないため$(0 \in g(\mathbb{R})$だが$0 \in \mathbb{R} \backslash\{0\}$ではない）、合成関数
+
+
+
+$$
+
+f \circ g: \mathbb{R} \rightarrow \mathbb{R}
+
+$$
+
+
+
+は定義できない。
+
+
+
+$(4)$実際、点$0 \in \mathbb{R}$に注目したとき、
+
+
+
+$$
+
+\begin{aligned}
+
+(f \circ g)(0) & =f(g(0)) \quad \because \text { 合成写像の定義 } \\
+
+& =f\left(0^2\right) \quad \because g \text { の定義 } \\
+
+& =f(0) \\
+
+& =\frac{1}{0} \quad \because f \text { の定義 }
+
+\end{aligned}
+
+$$
+
+
+
+となるが、実数を$0$で割ることはできないため$(f \circ g)(0)$は定義不可能だからである。
+
+&&&
+
+
+
+# 合成関数の定義域
+
+$(1)$繰り返しになりますが、2つの関数
+
+
+
+$$
+
+\begin{aligned}
+
+& f: \mathbb{R} \supset X \rightarrow \mathbb{R} \\
+
+& g: \mathbb{R} \supset Y \rightarrow \mathbb{R}
+
+\end{aligned}
+
+$$
+
+
+
+の合成関数
+
+
+
+$$
+
+g \circ f: \mathbb{R} \supset X \rightarrow \mathbb{R}
+
+$$
+
+
+
+が定義可能であるためには、以下の条件
+
+
+
+$$
+
+f(X) \subset Y
+
+$$
+
+
+
+が満たされている必要がある。
+
+
+
+$(2)$以上の条件が満たされない場合、すなわち、
+
+
+
+$$
+
+f(X) \not \subset Y
+
+$$
+
+
+
+すなわち、
+
+
+
+$$
+
+\exists x \in X: f(x) \notin Y
+
+$$
+
+
+
+が成り立つ場合、関数$g$はそもそも$(2)$中の点$f(x)$において定義されていないため$g(f(x))$は定義不可能であり、したがって合成関数$g \circ f$は$(2)$中の点$x$において定義できない。
+
+
+
+$(3)$このような事情を踏まえると、合成関数$g \circ f$の定義域は、
+
+
+
+$$
+
+D(g \circ f)=\{x \in X \mid f(x) \in Y\}
+
+$$
+
+
+
+となる。
+
+
+
+$(4)$極端なケースとして、集合$D(g \circ f)$が空集合である場合、合成関数$g \circ f$はそもそも定義不可能である。
+
+
+
+&&&ex (合成関数の定義域)
+
+$(1)$関数$f: \mathbb{R} \rightarrow \mathbb{R}$はそれぞれの$x \in \mathbb{R}$に対して、
+
+
+
+$$
+
+f(x)=x^2
+
+$$
+
+
+
+を定め、関数$g: \mathbb{R} \backslash\{0\} \rightarrow \mathbb{R}$はそれぞれの$x \in \mathbb{R} \backslash\{0\}$に対して、
+
+
+
+$$
+
+g(x)=\frac{1}{x}
+
+$$
+
+
+
+を定めるものとする。
+
+
+
+$(2)$合成関数$g \circ f$の定義域を特定する。
+
+
+
+$(3)$関数$g$は点$0$において定義されていないため、$f(x)=0$を満たす実数$x$は$g \circ f$の定義域には含まれない。
+
+
+
+$(4)$つまり、$g \circ f$の定義域は、
+
+
+
+$$
+
+\begin{aligned}
+
+D(g \circ f) & =\{x \in \mathbb{R} \mid f(x) \neq 0\} \\
+
+& =\left\{x \in \mathbb{R} \mid x^2 \neq 0\right\} \quad \because f \text { の定義 } \\
+
+& =\mathbb{R} \backslash\{0\}
+
+\end{aligned}
+
+$$
+
+
+
+となる。
+
+
+
+$(5)$その上で、$g \circ f$は定義域のそれぞれの要素$x \in \mathbb{R} \backslash\{0\}$に対して、
+
+
+
+$$
+
+\begin{aligned}
+
+(g \circ f)(x) & =g(f(x)) \quad \because g \circ f \text { の定義 } \\
+
+& =g\left(x^2\right) \quad \because f \text { の定義 } \\
+
+& =\frac{1}{x^2} \quad \because g \text { の定義 }
+
+\end{aligned}
+
+$$
+
+
+
+を値として定める。
+
+&&&
+
+
+
+&&&ex (合成関数の定義域)
+
+$(1)$関数$f: \mathbb{R} \rightarrow \mathbb{R}$はそれぞれの$x \in \mathbb{R}$に対して、
+
+
+
+$$
+
+f(x)=-x^2-1
+
+$$
+
+
+
+を定め、関数$g: \mathbb{R}_{+} \rightarrow \mathbb{R}$はそれぞれの$x \in \mathbb{R}_{+}$に対して、
+
+
+
+$$
+
+g(x)=\sqrt{x}
+
+$$
+
+
+
+を定めるものとする。
+
+
+
+$(2)$関数$f$がそれぞれの$x$に対して定める値$f(x)$は負の実数ですが、関数$g$は任意の負の実数において定義されていないため、そもそも合成関数$g \circ f$は定義不可能である。
+
+&&&
+
+
+
+# 関数の合成は交換律を満たさない
+
+$(1)$2つの関数
+
+
+
+$$
+
+\begin{aligned}
+
+& f: \mathbb{R} \supset X \rightarrow \mathbb{R} \\
+
+& g: \mathbb{R} \supset Y \rightarrow \mathbb{R}
+
+\end{aligned}
+
+$$
+
+
+
+が与えられたとき、合成関数としては以下の2通り
+
+
+
+$$
+
+\begin{aligned}
+
+& g \circ f: \mathbb{R} \supset X \rightarrow \mathbb{R} \\
+
+& f \circ g: \mathbb{R} \supset Y \rightarrow \mathbb{R}
+
+\end{aligned}
+
+$$
+
+
+
+が存在し得るが、先に明らかになったように、これらはともに定義可能であるとは限らない。
+
+
+
+$(2)$その一方で、以下の2つの条件
+
+
+
+$$
+
+\begin{aligned}
+
+f(X) & \subset Y \\
+
+g(Y) & \subset X
+
+\end{aligned}
+
+$$
+
+
+
+がともに成立する場合には2つの合成関数$g \circ f$および$f \circ g$がともに定義可能である。
+
+
+
+$(3)$ただし、そのような場合でも、両者は関数として一致するとは限らない。
+
+
+
+$(4)$したがって、2つの関数$f, g$を合成する際には順番に注意する必要がある。
+
+
+
+&&&ex (関数の合成は交換律を満たさない)
+
+$(1)$関数$f: \mathbb{R} \rightarrow \mathbb{R}$はそれぞれの$x \in \mathbb{R}$に対して、
+
+
+
+$$
+
+f(x)=x^2
+
+$$
+
+
+
+を定め、関数$g: \mathbb{R} \rightarrow \mathbb{R}$はそれぞれの$x \in \mathbb{R}$に対して、
+
+
+
+$$
+
+g(x)=x+2
+
+$$
+
+
+
+を定めるものとする。
+
+
+
+$(2)$先に明らかにしたように、合成関数$g \circ f: \mathbb{R} \rightarrow \mathbb{R}$が定義可能であり、これはそれぞれの$x \in \mathbb{R}$に対して、
+
+
+
+$$
+
+(g \circ f)(x)=x^2+2
+
+$$
+
+
+
+を定める。
+
+
+
+$(3)$合成関数$f \circ g: \mathbb{R} \rightarrow \mathbb{R}$もまた定義可能であり、これはそれぞれの$x \in \mathbb{R}$に対して、
+
+
+
+$$
+
+(f \circ g)(x)=(x+2)^2
+
+$$
+
+
+
+を定める。
+
+
+
+$(4)$点$1 \in \mathbb{R}$に注目したとき、
+
+
+
+$$
+
+\begin{aligned}
+
+& (g \circ f)(1)=1^2+2=3 \\
+
+& (f \circ g)(1)=(1+2)^2=9
+
+\end{aligned}
+
+$$
+
+
+
+となるため、
+
+
+
+$$
+
+(g \circ f)(1) \neq(f \circ g)(1)
+
+$$
+
+
+
+を得る。
+
+
+
+$(5)$以上より、
+
+
+
+$$
+
+g \circ f \neq f \circ g
+
+$$
+
+
+
+であることが明らかになった。
+
+&&&
+
+
+
+# 関数の合成は結合律を満たす
+
+$(1)$3つの関数
+
+
+
+$$
+
+\begin{aligned}
+
+& f: \mathbb{R} \supset X \rightarrow \mathbb{R} \\
+
+& g: \mathbb{R} \supset Y \rightarrow \mathbb{R} \\
+
+& h: \mathbb{R} \supset Z \rightarrow \mathbb{R}
+
+\end{aligned}
+
+$$
+
+
+
+で与えられているとともに、これらの間に以下の関係
+
+
+
+$(a)f(X) \subset Y$
+
+
+
+$(b)g(Y) \subset Z$
+
+
+
+がともに成り立つものとする。
+
+
+
+$(2)$条件$(a)$のもとでは$f$と$g$の合成関数
+
+
+
+$$
+
+g \circ f: \mathbb{R} \supset X \rightarrow \mathbb{R}
+
+$$
+
+
+
+が定義可能である。
+
+
+
+$(3)$得られた合成関数$g \circ f$の値域は関数$g$の値域の部分集合であるため、条件$(b)$のもとでは$g \circ f$と$h$の合成関数
+
+
+
+$$
+
+h \circ(g \circ f): \mathbb{R} \supset X \rightarrow \mathbb{R}
+
+$$
+
+
+
+が定義可能である。
+
+
+
+$(4)$条件$(b)$のもとでは$g$と$h$の合成関数
+
+
+
+$$
+
+h \circ g: \mathbb{R} \supset Y \rightarrow \mathbb{R}
+
+$$
+
+
+
+が定義可能である。
+
+
+
+$(5)$さらに、条件$(a)$のもとでは$f$と$h \circ g$の合成関数
+
+
+
+$$
+
+(h \circ g) \circ f: \mathbb{R} \supset X \rightarrow \mathbb{R}
+
+$$
+
+
+
+が定義可能である。
+
+
+
+$(6)$つまり、3つの関数$f, g, h$を合成する場合、隣り合うどの2つの関数を最初に合成するかに応じて、最終的に$(3)$または$(5)$が得られる。
+
+
+
+$(7)$実は、$(3)$と$(5)$は関数として等しくなることが保証される。
+
+
+
+$(8)$つまり、任意の$x \in X$について、
+
+
+
+$$
+
+(h \circ(g \circ f))(x)=((h \circ g) \circ f)(x)
+
+$$
+
+
+
+が成り立つということである。
+
+
+
+$(9)$関数の合成に関する以上の性質を**結合律**(associative law)と呼ぶ。
+
+
+
+&&&prop (関数の合成に関する結合律)
+
+$(1)$3つの関数
+
+
+
+$$
+
+\begin{aligned}
+
+& f: \mathbb{R} \supset X \rightarrow \mathbb{R} \\
+
+& g: \mathbb{R} \supset Y \rightarrow \mathbb{R} \\
+
+& h: \mathbb{R} \supset Z \rightarrow \mathbb{R}
+
+\end{aligned}
+
+$$
+
+
+
+が与えられており、これらの間には以下の関係
+
+
+
+$$
+
+\begin{aligned}
+
+f(X) & \subset Y \\
+
+g(Y) & \subset Z
+
+\end{aligned}
+
+$$
+
+
+
+が成り立つものとする。
+
+
+
+$(2)$このとき、以下の2つの合成関数
+
+
+
+$$
+
+\begin{aligned}
+
+& h \circ(g \circ f): \mathbb{R} \supset X \rightarrow \mathbb{R} \\
+
+& (h \circ g) \circ f: \mathbb{R} \supset X \rightarrow \mathbb{R}
+
+\end{aligned}
+
+$$
+
+
+
+がともに定義可能であるとともに、
+
+
+
+$$
+
+h \circ(g \circ f)=(h \circ g) \circ f
+
+$$
+
+
+
+が成り立つ。
+
+&&&
+
+
+
+$(1)$合成可能な3つの関数$f, g, h$が与えられたとき、関数の合成$\circ$の結合律より、
+
+
+
+$$
+
+h \circ(g \circ f)=(h \circ g) \circ f
+
+$$
+
+
+
+が成り立つことが明らかになった。
+
+
+
+$(2)$つまり、$h \circ(g \circ f)$と$(h \circ g) \circ f$は関数として等しいため両者を区別する必要はなく、これらをまとめて、
+
+
+
+$$
+
+h \circ g \circ f
+
+$$
+
+
+
+と表記できるものと定める。
+
+
+
+&&&ex (3つ以上の関数の合成)
+
+$(1)$関数$f, g, h: \mathbb{R} \rightarrow \mathbb{R}$はそれぞれの$x \in \mathbb{R}$に対して、
+
+
+
+$$
+
+\begin{aligned}
+
+f(x) & =2 x \\
+
+g(x) & =\cos x \\
+
+h(x) & =x^3
+
+\end{aligned}
+
+$$
+
+
+
+を定めるものとする。
+
+
+
+$(2)$$f$の値域は明らかに$g$の定義域$\mathbb{R}$の部分集合であり、$g$の値域は明らかに$h$の定義域$\mathbb{R}$の部分集合であるため、合成関数$h \circ g \circ f: \mathbb{R} \rightarrow \mathbb{R}$が定義可能であり、これはそれぞれの$x \in \mathbb{R}$に対して、
+
+
+
+$$
+
+\begin{aligned}
+
+(h \circ g \circ f)(x) & =h(g(f(x))) \quad \because h \circ g \circ f \text { の定義 } \\
+
+& =h(g(2 x)) \quad \because f \text { の定義 } \\
+
+& =h(\cos (2 x)) \quad \because g \text { の定義 } \\
+
+& =[\cos (2 x)]^3 \quad \because h \text { の定義 }
+
+\end{aligned}
+
+$$
+
+
+
+を値として定める。
+
+&&&
+
+
+
+$(1)$4つの関数
+
+
+
+$$
+
+\begin{aligned}
+
+& f: \mathbb{R} \supset X_1 \rightarrow \mathbb{R} \\
+
+& g: \mathbb{R} \supset X_2 \rightarrow \mathbb{R} \\
+
+& h: \mathbb{R} \supset X_3 \rightarrow \mathbb{R} \\
+
+& i: \mathbb{R} \supset X_4 \rightarrow \mathbb{R}
+
+\end{aligned}
+
+$$
+
+
+
+が与えられているとともに、これらの間に以下の関係
+
+
+
+$$
+
+\begin{aligned}
+
+& f\left(X_1\right) \subset X_2 \\
+
+& g\left(X_2\right) \subset X_3 \\
+
+& h\left(X_3\right) \subset X_4
+
+\end{aligned}
+
+$$
+
+
+
+がすべて成り立つ場合には、写像の合成$\circ$に関する結合律を繰り返し適用することにより、
+
+
+
+$$
+
+\begin{aligned}
+
+((i \circ h) \circ g) \circ f & =(i \circ(h \circ g)) \circ f \quad \because \text { 結合律 } \\
+
+& =i \circ((h \circ g) \circ f) \quad \because \text { 結合律 } \\
+
+& =i \circ(h \circ(g \circ f)) \quad \because \text { 結合律 }
+
+\end{aligned}
+
+$$
+
+
+
+を得る。
+
+
+
+$(2)$つまり、合成可能な4つの関数$f, g, h, i$を合成する場合、$f, g, h, i$の間にある3個の$\circ$の中のどれを最初に作用させる場合でも、最終的に得られる合成関数は関数として等しくなることが保証されるため、これら4つの合成関数を区別せずに、
+
+
+
+$$
+
+i \circ h \circ g \circ f
+
+$$
+
+
+
+で表記する。
+
+
+
+$(3)$任意の有限個の関数の合成についても同様の議論が成立する。
+
+
+
+$(4)$つまり、合成可能な有限$n$個の関数$f_1, \cdots, f_n$の間にある$n-1$個の$\circ$の中のどれを最初に作用させる場合でも、最終的に得られる合成関数は関数として等しくなることが保証されるため、それらの合成関数を区別せずに、
+
+
+
+$$
+
+f_1 \circ \cdots \circ f_n
+
+$$
+
+
+
+で表記する。
+
+
+
+&&&prop (結合律の一般化)
+
+$(1)$合成可能な有限$n$個の関数$f_1, \cdots, f_n$を任意に選んだ上で、これらの相対的な順番を変えないまま合成するとき、合成させる順番とは関係なく最終的に得られる合成関数はいずれも関数として等しい。
+
+&&&
