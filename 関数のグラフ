@@ -1,0 +1,321 @@
+# 関数のグラフ
+
+$(1)$関数$f: \mathbb{R} \supset X \rightarrow \mathbb{R}$が与えられたとき、以下の命題
+
+
+
+$$
+
+y=f(x)
+
+$$
+
+
+
+が真になるような順序対$(x, y) \in X \times \mathbb{R}$をすべて集めてできる集合を、
+
+
+
+$$
+
+G(f)=\{(x, y) \in X \times \mathbb{R} \mid y=f(x)\}
+
+$$
+
+
+
+と表記し、これを関数$f$の**グラフ**(graph)と呼ぶ。
+
+
+
+$(2)$明らかに、
+
+
+
+$$
+
+G(f) \subset X \times \mathbb{R}
+
+$$
+
+
+
+である。
+
+
+
+$(3)$関数$f: \mathbb{R} \supset X \rightarrow \mathbb{R}$のグラフは、
+
+
+
+$$
+
+G(f)=\{(x, y) \in X \times \mathbb{R} \mid y=f(x)\}
+
+$$
+
+
+
+と定義されるため、順序対$(x, y) \in X \times \mathbb{R}$を任意に選んだとき、以下の関係
+
+
+
+$$
+
+(x, y) \in G(f) \Leftrightarrow y=f(x)
+
+$$
+
+
+
+が成り立つ。
+
+
+
+$(4)$つまり、順序対$(x, y)$が関数$f$のグラフの要素であることと、関数$f$が$x$に対して定める値が$y$と一致することは必要十分である。
+
+
+
+&&&ex (関数のグラフ)
+
+$(1)$関数$f: \mathbb{R} \rightarrow \mathbb{R}$はそれぞれの$x \in \mathbb{R}$に対して、
+
+
+
+$$
+
+f(x)=\frac{1}{2} x+1
+
+$$
+
+
+
+を定めるものとする。
+
+
+
+$(2)$この関数のグラフは、
+
+
+
+$$
+
+G(f)=\left\{(x, y) \in \mathbb{R} \times \mathbb{R} \left\lvert\, y=\frac{1}{2} x+1\right.\right\}
+
+$$
+
+
+
+であり、これは下図の直線として描かれる。
+
+
+
+![関数のグラフ](/uploads/mathdown/I8Pbp0562Jm0LJxNBaIr.jpeg)
+
+&&&
+
+
+
+&&&ex (関数のグラフ)
+
+$(1)$関数$f: \mathbb{R} \rightarrow \mathbb{R}$はそれぞれの$x \in \mathbb{R}$に対して、
+
+
+
+$$
+
+f(x)=-x^2+x+1
+
+$$
+
+
+
+を定めるものとする。
+
+
+
+$(2)$この関数のグラフは、
+
+
+
+$$
+
+G(f)=\left\{(x, y) \in \mathbb{R} \times \mathbb{R} \mid y=-x^2+x+1\right\}
+
+$$
+
+
+
+であり、これは下図の曲線として描かれる。
+
+
+
+![関数のグラフ](/uploads/mathdown/kmqseLBD0Oe65cjeUUEU.jpeg)
+
+&&&
+
+
+
+# 直積の部分集合としての関数
+
+$(1)$関数$f: \mathbb{R} \supset X \rightarrow \mathbb{R}$のグラフは、
+
+
+
+$$
+
+G(f)=\{(x, y) \in X \times \mathbb{R} \mid y=f(x)\}
+
+$$
+
+
+
+と定義される$X \times \mathbb{R}$の部分集合だが、これはどのような性質を満たす集合だろうか。
+
+
+
+$(2)$関数$f$は始集合のそれぞれの要素$x \in X$に対してその像$f(x) \in \mathbb{R}$を1つずつ定めるが、以上の事実は、それぞれの$x \in X$に対して$(x, y) \in G(f)$を満たす$y \in \mathbb{R}$が1つずつ必ず存在することを意味する。
+
+
+
+&&&prop (関数のグラフの性質)
+
+$(1)$関数$f: \mathbb{R} \supset X \rightarrow \mathbb{R}$が与えられたとき、そのグラフ$G(f) \subset X \times \mathbb{R}$は以下の条件
+
+
+
+$$
+
+\forall x \in X, \exists!y \in \mathbb{R}:(x, y) \in G(f)
+
+$$
+
+
+
+を満たす。
+
+
+
+$(2)$ただし、$\exists!$は「一意的に存在する」ことを表す記号である。
+
+&&&
+
+
+
+$(1)$逆に、直積$X \times \mathbb{R}$の部分集合$G$が以下の性質
+
+
+
+$$
+
+\forall x \in X, \exists!y \in \mathbb{R}:(x, y) \in G
+
+$$
+
+
+
+を満たすものとする。
+
+
+
+$(2)$つまり、集合$X$の要素$x$を任意に選んだとき、$(x, y) \in G$を満たすような$y \in \mathbb{R}$が必ず1つずつ存在するということである。
+
+
+
+$(3)$この場合、この$G$をグラフとして持つような関数$f: \mathbb{R} \supset X \rightarrow \mathbb{R}$が存在することが保証される。
+
+
+
+&&&prop (関数のグラフであるための条件)
+
+$(1)$集合$X \subset \mathbb{R}$が与えられたとき、集合$G \subset X \times \mathbb{R}$が、
+
+
+
+$$
+
+\forall x \in X, \exists!y \in \mathbb{R}:(x, y) \in G
+
+$$
+
+
+
+を満たす場合には、
+
+
+
+$$
+
+G(f)=G
+
+$$
+
+
+
+を満たす関数  $f: \mathbb{R} \supset X \rightarrow \mathbb{R}$が存在する。
+
+&&&
+
+
+
+$(1)$以上の2つの命題より、以下の概念の間には1対1の関係が成立することが明らかになった。
+
+
+
+$(2)$したがって、これらの概念は実質的に等しく、互いに交換可能である。
+
+
+
+$1.$関数$f: \mathbb{R} \supset X \rightarrow \mathbb{R}$
+
+
+
+$2.$関数$f: \mathbb{R} \supset X \rightarrow \mathbb{R}$のグラフ$G(f)$
+
+
+
+$3.$以下の条件
+
+
+
+$$
+
+\forall x \in X, \exists!y \in \mathbb{R}:(x, y) \in G
+
+$$
+
+
+
+を満たす集合$G \subset X \times \mathbb{R}$
+
+
+
+&&&ex (関数のグラフ)
+
+$(1)$直積$\mathbb{R} \times \mathbb{R}$の部分集合$G$が下図の曲線として与えられているものとする。
+
+
+
+![関数のグラフ](/uploads/mathdown/TnhTiiSZHEdxPalo7Y1m.jpeg)
+
+
+
+$(2)$図より、それぞれの$x \in \mathbb{R}$に対して$(x, y) \in G$を満たす$y \in \mathbb{R}$は1つずつ存在するため、上の命題より、これは何らかの関数$f: \mathbb{R} \rightarrow \mathbb{R}$のグラフである。
+
+&&&
+
+
+
+&&&ex (関数のグラフではない集合)
+
+$(1)$直積$\mathbb{R} \times \mathbb{R}$の部分集合$G$が下図の曲線として与えられているものとする。
+
+
+
+![関数のグラフではない集合](/uploads/mathdown/I8x5Q2Gx0zcuOtynSCPt.jpeg)
+
+
+
+$(2)$図より、$x \in \mathbb{R}$に対して$(x, y) \in G$を満たす$y \in \mathbb{R}$は一意的に定まるとは限らないため、上の命題より、この集合$G$をグラフとするような関数$f: \mathbb{R} \rightarrow \mathbb{R}$は存在しない。
+
+&&&
