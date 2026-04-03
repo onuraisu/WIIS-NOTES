@@ -1,0 +1,2011 @@
+# 関数による要素の像
+
+$(1)$関数$f: \mathbb{R} \supset X \rightarrow \mathbb{R}$が与えられたとき、始集合の要素$x \in X$を任意に選ぶと、$f$はそれに対して終集合の要素である実数
+
+
+
+$$
+
+f(x) \in \mathbb{R}
+
+$$
+
+
+
+を1つずつ定める。
+
+
+
+$(2)$これを$f$による$x$の**値**(value)や**像**(image)などと呼ぶ。
+
+
+
+&&&ex (関数による要素の像)
+
+$(1)$関数$f: \mathbb{R} \rightarrow \mathbb{R}$はそれぞれの$x \in \mathbb{R}$に対して、
+
+
+
+$$
+
+f(x)=x^2
+
+$$
+
+
+
+を定めるものとする。
+
+
+
+$(2)$このとき、
+
+
+
+$$
+
+\begin{aligned}
+
+f(0) & =0^2=0 \\
+
+f(1) & =1^2=1 \\
+
+f\left(-\frac{1}{2}\right) & =\left(-\frac{1}{2}\right)^2=\frac{1}{4}
+
+\end{aligned}
+
+$$
+
+
+
+などが成り立つ。
+
+&&&
+
+
+
+&&&ex (関数による要素の像)
+
+$(1)$関数$f: \mathbb{R} \backslash\{-1\} \rightarrow \mathbb{R}$はそれぞれの$x \in \mathbb{R} \backslash\{-1\}$に対して、
+
+
+
+$$
+
+f(x)=\frac{1}{x+1}
+
+$$
+
+
+
+を定めるものとする。
+
+
+
+$(2)$このとき、
+
+
+
+$$
+
+\begin{aligned}
+
+f(0) & =\frac{1}{0+1}=1 \\
+
+f\left(\frac{1}{2}\right) & =\frac{1}{\frac{1}{2}+1}=\frac{2}{3} \\
+
+f(1) & =\frac{1}{1+1}=\frac{1}{2}
+
+\end{aligned}
+
+$$
+
+
+
+などが成り立つ。
+
+
+
+$(3)$ちなみに、
+
+
+
+$$
+
+f(-1)=\frac{1}{(-1)+1}=\frac{1}{0}
+
+$$
+
+
+
+となるが、実数をゼロで割ることはできないためこれは定義不可能であり、したがって、この関数$f$は点$-1$において定義されない。
+
+&&&
+
+
+
+&&&ex (摂氏と華氏)
+
+$(1)$日本では温度の表記として「摂氏」を採用している一方で、米国をはじめとする海外のいくつかの国では「華氏」を利用している。
+
+
+
+$(2)$摂氏$x$度を華氏に換算すると、
+
+
+
+$$
+
+f(x)=\frac{9}{5} x+32
+
+$$
+
+
+
+となる。
+
+
+
+$(3)$以上のように定義される$f: \mathbb{R} \rightarrow \mathbb{R}$は関数である。
+
+
+
+$(4)$したがって、摂氏$0$度を華氏に換算すると、
+
+
+
+$$
+
+f(0)=\frac{9}{5} \cdot 0+32=32
+
+$$
+
+
+
+となる。
+
+
+
+$(5)$また、摂氏$100$度を華氏に換算すると、
+
+
+
+$$
+
+f(100)=\frac{9}{5} \cdot 100+32=212
+
+$$
+
+
+
+となる。
+
+&&&
+
+
+
+$(1)$関数$f: \mathbb{R} \supset X \rightarrow \mathbb{R}$のグラフは、
+
+
+
+$$
+
+G(f)=\{(x, y) \in X \times \mathbb{R} \mid f(x)=y\}
+
+$$
+
+
+
+と定義される$X \times \mathbb{R}$の部分集合であるため、順序対$(x, y) \in X \times \mathbb{R}$を任意に選ぶと、以下の関係
+
+
+
+$$
+
+f(x)=y \Leftrightarrow(x, y) \in G(f)
+
+$$
+
+
+
+が成り立つ。
+
+
+
+$(2)$つまり、$f$による$x$の像が$y$であることと、$(x, y)$が$f$のグラフの要素であることは必要十分である。
+
+
+
+# 関数による集合の像・関数の値域
+
+$(1)$関数$f: \mathbb{R} \supset X \rightarrow \mathbb{R}$が与えられたとき、始集合の部分集合$A \subset X$を任意に選ぶ。
+
+
+
+$(2)$$f$は$A$のそれぞれの要素$x$に対してその像$f(x)$を定めるが、これらの像をすべて集めてできる集合を、
+
+
+
+$$
+
+f(A)=\{f(x) \in \mathbb{R} \mid x \in A\}
+
+$$
+
+
+
+で表記し、これを関数$f$による集合$A$の**像**(image)と呼ぶ。
+
+
+
+$(3)$明らかに、
+
+
+
+$$
+
+f(A) \subset \mathbb{R}
+
+$$
+
+
+
+が成り立つ。
+
+
+
+$(4)$関数$f: \mathbb{R} \supset X \rightarrow \mathbb{R}$の始集合$X$は$X$自身の部分集合であるため、$f$による$X$の像
+
+
+
+$$
+
+f(X)=\{f(x) \in \mathbb{R} \mid x \in X\}
+
+$$
+
+
+
+もまた定義可能である。
+
+
+
+$(5)$これを関数$f$の**値域**(range)と呼び、
+
+
+
+$$
+
+R(f)
+
+$$
+
+
+
+で表記する。
+
+
+
+$(6)$つまり、
+
+
+
+$$
+
+\begin{aligned}
+
+R(f) & =f(X) \quad \because \text { 値域の定義 } \\
+
+& =\{f(x) \in \mathbb{R} \mid x \in X\} \quad \because \text { 関数による像の定義 }
+
+\end{aligned}
+
+$$
+
+
+
+である。
+
+
+
+&&&ex (関数による集合の像と値域)
+
+$(1)$写像$f: \mathbb{R} \rightarrow \mathbb{R}$はそれぞれの$x \in \mathbb{R}$に対して、
+
+
+
+$$
+
+f(x)=x^2
+
+$$
+
+
+
+を定めるものとする。
+
+
+
+$(2)$この関数$f$のグラフは以下の通りである。
+
+
+
+![関数のグラフ](/uploads/mathdown/Dm5IdKyHxrWKhRAIdxwY.jpeg)
+
+
+
+$(3)$$f$による閉区間$[0,1] \subset \mathbb{R}$の像は、
+
+
+
+$$
+
+\begin{aligned}
+
+f([0,1]) & =\left\{x^2 \in \mathbb{R} \mid x \in[0,1]\right\} \\
+
+& =[0,1]
+
+\end{aligned}
+
+$$
+
+
+
+である。
+
+
+
+$(4)$また、$f$による閉区間$[-1,2] \subset \mathbb{R}$の像は、
+
+
+
+$$
+
+\begin{aligned}
+
+f([-1,2]) & =\left\{x^2 \in \mathbb{R} \mid x \in[-1,2]\right\} \\
+
+& =[0,4]
+
+\end{aligned}
+
+$$
+
+
+
+である。
+
+
+
+$(5)$また、$f$による集合$\{3\} \subset \mathbb{R}$の像は、
+
+
+
+$$
+
+\begin{aligned}
+
+f(\{3\}) & =\left\{x^2 \in \mathbb{R} \mid x \in\{3\}\right\} \\
+
+& =\{9\}
+
+\end{aligned}
+
+$$
+
+
+
+である。
+
+
+
+$(6)$また、$f$の値域は、
+
+
+
+$$
+
+\begin{aligned}
+
+R(f) & =f(\mathbb{R}) \\
+
+& =\left\{x^2 \in \mathbb{R} \mid x \in \mathbb{R}\right\} \\
+
+& =\mathbb{R}_{+}
+
+\end{aligned}
+
+$$
+
+
+
+となる。
+
+
+
+$(7)$ただし、$\mathbb{R}_{+}$はすべての非負の実数からなる集合である。
+
+&&&
+
+
+
+&&&ex (関数による集合の像と値域)
+
+$(1)$関数$f: \mathbb{R} \backslash\{-1\} \rightarrow \mathbb{R}$はそれぞれの$x \in \mathbb{R} \backslash\{-1\}$に対して、
+
+
+
+$$
+
+f(x)=\frac{1}{x+1}
+
+$$
+
+
+
+を定めるものとする。
+
+
+
+$(2)$この関数$f$のグラフは以下の通りである。
+
+
+
+![関数のグラフ](/uploads/mathdown/Ml71aY5Epm9rpa6Uo8KY.jpeg)
+
+
+
+$(3)$$f$による閉区間$[0,1] \subset \mathbb{R}$の像は、
+
+
+
+$$
+
+\begin{aligned}
+
+f([0,1]) & =\left\{\left.\frac{1}{x+1} \in \mathbb{R} \right\rvert\, x \in[0,1]\right\} \\
+
+& =\left[\frac{1}{2}, 1\right]
+
+\end{aligned}
+
+$$
+
+
+
+である。
+
+
+
+$(4)$また、$f$による半開区間$(-1,0] \subset \mathbb{R}$の像は、
+
+
+
+$$
+
+\begin{aligned}
+
+f((-1,0]) & =\left\{\left.\frac{1}{x+1} \in \mathbb{R} \right\rvert\, x \in(-1,0]\right\} \\
+
+& =[1,+\infty)
+
+\end{aligned}
+
+$$
+
+
+
+である。
+
+
+
+$(5)$また、$f$による集合$\{-3\} \subset \mathbb{R}$の像は、
+
+
+
+$$
+
+\begin{aligned}
+
+f(\{-3\}) & =\left\{\left.\frac{1}{x+1} \in \mathbb{R} \right\rvert\, x \in\{-3\}\right\} \\
+
+& =\left\{-\frac{1}{2}\right\}
+
+\end{aligned}
+
+$$
+
+
+
+である。
+
+
+
+$(6)$また、$f$の値域は、
+
+
+
+$$
+
+\begin{aligned}
+
+R(f) & =f(\mathbb{R} \backslash\{-1\}) \\
+
+& =\left\{\left.\frac{1}{x+1} \in \mathbb{R} \right\rvert\, x \in \mathbb{R} \backslash\{-1\}\right\} \\
+
+& =\mathbb{R} \backslash\{0\}
+
+\end{aligned}
+
+$$
+
+
+
+である。
+
+&&&
+
+
+
+&&&ex (摂氏と華氏)
+
+$(1)$摂氏を華氏に換算する関数$f: \mathbb{R} \rightarrow \mathbb{R}$はそれぞれの$x \in \mathbb{R}$に対して、
+
+
+
+$$
+
+f(x)=\frac{9}{5} x+32
+
+$$
+
+
+
+を定める。
+
+
+
+$(2)$摂氏が$0$以上$100$以下の値をとり得る場合、それに対応する華氏の範囲は$f$による区間$[0,100]$の像であり、具体的には、
+
+
+
+$$
+
+\begin{aligned}
+
+f([0,100]) & =\{f(x) \in \mathbb{R} \mid x \in[0,100]\} \\
+
+& =\left\{\left.\frac{9}{5} x+32 \in \mathbb{R} \right\rvert\, x \in[0,100]\right\} \\
+
+& =[32,212]
+
+\end{aligned}
+
+$$
+
+
+
+となる。
+
+&&&
+
+
+
+&&&ex (関数による空集合の像)
+
+$(1)$空集合は任意の集合の部分集合であるため、関数$f: \mathbb{R} \supset X \rightarrow \mathbb{R}$による空集合$\phi \subset X$の像も定義可能である。
+
+
+
+$(2)$具体的には、
+
+
+
+$$
+
+\begin{aligned}
+
+f(\phi) & =\{f(x) \in \mathbb{R} \mid x \in \phi\} \\
+
+& =\phi \quad \because x \in \phi \text { は恒偽式 }
+
+\end{aligned}
+
+$$
+
+
+
+となる。
+
+
+
+$(3)$つまり、関数による空集合の像は空集合である。
+
+&&&
+
+
+
+$(1)$関数$f: \mathbb{R} \supset X \rightarrow \mathbb{R}$による始集合の部分集合$A \subset X$の像は、
+
+
+
+$$
+
+f(A)=\{f(x) \in \mathbb{R} \mid x \in A\}
+
+$$
+
+
+
+と定義されるため、終集合の要素$y \in \mathbb{R}$を任意に選んだとき、以下の関係
+
+
+
+$$
+
+\begin{aligned}
+
+y \in f(A) & \Leftrightarrow \exists x \in A: y=f(x) \quad \because f(A) \text { の定義 } \\
+
+& \Leftrightarrow \exists x \in A:(x, y) \in G(f) \quad \because G(f) \text { の定義 }
+
+\end{aligned}
+
+$$
+
+
+
+が成り立つ。
+
+
+
+$(2)$以上を踏まえると、関数$f$による集合$A \subset X$の像を、
+
+
+
+$$
+
+\begin{aligned}
+
+f(A) & =\{f(x) \in \mathbb{R} \mid x \in A\} \\
+
+& =\{y \in \mathbb{R} \mid \exists x \in A: y=f(x)\} \\
+
+& =\{y \in \mathbb{R} \mid \exists x \in A:(x, y) \in G(f)\}
+
+\end{aligned}
+
+$$
+
+
+
+などと様々な形で表現できる。
+
+
+
+$(3)$特に、$A=X$の場合には、
+
+
+
+$$
+
+\begin{aligned}
+
+R(f) & =f(X) \\
+
+& =\{f(x) \in \mathbb{R} \mid x \in X\} \\
+
+& =\{y \in \mathbb{R} \mid \exists x \in X: y=f(x)\} \\
+
+& =\{y \in \mathbb{R} \mid \exists x \in X:(x, y) \in G(f)\}
+
+\end{aligned}
+
+$$
+
+
+
+となり、関数$f$の値域$R(f)$を上のように様々な形で表現できる。
+
+
+
+# 写像による要素の像と集合の像の関係
+
+$(1)$関数$f: \mathbb{R} \supset X \rightarrow \mathbb{R}$が与えられたとき、始集合の部分集合$A \subset X$を任意に選ぶ。
+
+
+
+$(2)$$f$による$A$の像
+
+
+
+$$
+
+f(A)=\{f(x) \in \mathbb{R} \mid x \in A\}
+
+$$
+
+
+
+は、$f$が$A$のそれぞれの要素$x$に対して定める像$f(x)$をすべて集めることにより得られる集合であるため、$x \in A$を任意に選んだとき、
+
+
+
+$$
+
+f(x) \in f(A)
+
+$$
+
+
+
+が成り立つ。
+
+
+
+$(3)$つまり、$f$による$A$の要素の像は、$f$による$A$の像の要素になることが保証されるということである。
+
+
+
+&&&prop (関数による要素の像と集合の像の関係)
+
+$(1)$関数$f: \mathbb{R} \supset X \rightarrow \mathbb{R}$が与えられたとき、集合$A \subset X$を任意に選ぶ。
+
+
+
+$(2)$このとき、以下の関係
+
+
+
+$$
+
+\forall x \in X:[x \in A \Rightarrow f(x) \in f(A)]
+
+$$
+
+
+
+が成り立つ。
+
+&&&
+
+
+
+$(1)$上の命題とは逆に、関数$f: \mathbb{R} \supset X \rightarrow \mathbb{R}$が与えられたとき、任意の集合$A \subset X$について、以下の関係
+
+
+
+$$
+
+\forall x \in X:[f(x) \in f(A) \Rightarrow x \in A]
+
+$$
+
+
+
+は成り立つとは限らない。
+
+
+
+$(2)$つまり、この命題の否定である、
+
+
+
+$$
+
+\exists x \in X:[f(x) \in f(A) \wedge x \notin A]
+
+$$
+
+
+
+を満たすような集合$A \subset X$が存在する状況が起こり得る。
+
+
+
+$(3)$以下の例より明らかである。
+
+
+
+&&&ex (関数による要素の像と集合の像の関係)
+
+$(1)$関数$f: \mathbb{R} \rightarrow \mathbb{R}$はそれぞれの$x \in \mathbb{R}$に対して、
+
+
+
+$$
+
+f(x)=x^2
+
+$$
+
+
+
+を定めるものとする。
+
+
+
+$(2)$開区間$(-1,3) \subset \mathbb{R}$に注目すると、その像は、
+
+
+
+$$
+
+\begin{aligned}
+
+f((-1,3)) & =\left\{x^2 \in \mathbb{R} \mid x \in(-1,3)\right\} \\
+
+& =[0,9)
+
+\end{aligned}
+
+$$
+
+
+
+となる。
+
+
+
+$(3)$一方、$(-1,3)$の要素ではない実数$-2$に注目すると、その像は、
+
+
+
+$$
+
+f(-2)=4 \in f((-1,3))
+
+$$
+
+
+
+を満たす。
+
+
+
+$(4)$以上より、
+
+
+
+$$
+
+f(-2) \in f((-1,3)) \wedge-2 \notin(-1,3)
+
+$$
+
+
+
+が成り立つことが明らかになった。
+
+&&&
+
+
+
+# 関数による集合の像と包含関係
+
+$(1)$関数$f: \mathbb{R} \supset X \rightarrow \mathbb{R}$が与えられたとき、始集合の部分集合$A_1, A_2 \subset X$をそれぞれ任意に選ぶ。
+
+
+
+$(2)$両者の間に$A_1 \subset A_2$が成り立つ場合には、それらの像の間にも、
+
+
+
+$$
+
+f\left(A_1\right) \subset f\left(A_2\right)
+
+$$
+
+
+
+という包含関係が成り立つ。
+
+
+
+&&&prop (関数による集合の像と包含関係)
+
+$(1)$関数$f: \mathbb{R} \supset X \rightarrow \mathbb{R}$が与えられたとき、
+
+
+
+$$
+
+\forall A_1, A_2 \subset X:\left[A_1 \subset A_2 \Rightarrow f\left(A_1\right) \subset f\left(A_2\right)\right]
+
+$$
+
+
+
+が成り立つ。
+
+&&&
+
+
+
+$(1)$上の命題とは逆に、任意の集合$A_1, A_2 \subset X$について、以下の関係
+
+
+
+$$
+
+f\left(A_1\right) \subset f\left(A_2\right) \Rightarrow A_1 \subset A_2
+
+$$
+
+
+
+は成り立つとは限らない。
+
+
+
+$(2)$つまり、上の命題の否定である、
+
+
+
+$$
+
+f\left(A_1\right) \subset f\left(A_2\right) \wedge A_1 \not \subset A_2
+
+$$
+
+
+
+を満たすような集合$A_1, A_2 \subset X$が存在する状況が起こり得る。
+
+
+
+$(3)$以下の例より明らかである。
+
+
+
+&&&ex (関数による要素の像と集合の像の関係)
+
+$(1)$関数$f: \mathbb{R} \rightarrow \mathbb{R}$はそれぞれの$x \in \mathbb{R}$に対して、
+
+
+
+$$
+
+f(x)=x^2
+
+$$
+
+
+
+を定めるものとする。
+
+
+
+$(2)$始集合$\mathbb{R}$の部分集合である閉区間$[-1,0]$と$[0,2]$に注目すると、$f$によるこれらの像は、
+
+
+
+$$
+
+\begin{aligned}
+
+f([-1,0]) & =\left\{x^2 \in \mathbb{R} \mid x \in[-1,0]\right\}=[0,1] \\
+
+f([0,2]) & =\left\{x^2 \in \mathbb{R} \mid x \in[0,2]\right\}=[0,4]
+
+\end{aligned}
+
+$$
+
+
+
+となるため
+
+
+
+$$
+
+f([-1,0]) \subset f([0,2])
+
+$$
+
+
+
+が成り立つ。
+
+
+
+$(3)$その一方で、明らかに、
+
+
+
+$$
+
+[-1,0] \not \subset[0,2]
+
+$$
+
+
+
+である。
+
+&&&
+
+
+
+# 関数による補集合の像
+
+$(1)$関数$f: \mathbb{R} \supset X \rightarrow \mathbb{R}$が与えられたとき、始集合の部分集合$A \subset X$を それぞれ任意に選んだ上で、その補集合$A^c=X \backslash A$をとる。
+
+
+
+$(2)$このとき、以下の2つの集合
+
+
+
+$$
+
+\begin{aligned}
+
+f\left(A^c\right) & =\left\{f(x) \in \mathbb{R} \mid x \in A^c\right\} \\
+
+f(A)^c & =\mathbb{R} \backslash f(A)
+
+\end{aligned}
+
+$$
+
+
+
+の間に何らかの関係は成り立つだろうか。
+
+
+
+$(3)$後ほど示すように、$f$が単射である場合には、
+
+
+
+$$
+
+f\left(A^c\right) \subset f(A)^c
+
+$$
+
+
+
+が成り立ち、$f$が全射である場合には、
+
+
+
+$$
+
+f(A)^c \subset f\left(A^c\right)
+
+$$
+
+
+
+が成り立ち、$f$が全単射である場合には、
+
+
+
+$$
+
+f\left(A^c\right)=f(A)^c
+
+$$
+
+
+
+が成り立ちますが、一般には、両者の間にこれらの関係は成立しない。
+
+
+
+$(4)$以下の例より明らかである。
+
+
+
+&&&ex (関数による補集合の像)
+
+$(1)$関数$f: \mathbb{Z} \rightarrow \mathbb{R}$はそれぞれの$z \in \mathbb{Z}$に対して、
+
+
+
+$$
+
+f(z)=z^2+1
+
+$$
+
+
+
+を定めるものとする。
+
+
+
+$(2)$ただし、$\mathbb{Z}$はすべての整数からなる集合である。
+
+
+
+$(3)$始集合$\mathbb{Z}$の部分集合であるすべての非負の整数からなる集合
+
+
+
+$$
+
+A=\{0,1,2, \cdots\}
+
+$$
+
+
+
+に注目すると、以下の関係
+
+
+
+$$
+
+\begin{aligned}
+
+& f\left(A^c\right) \subset f(A)^c \\
+
+& f(A)^c \subset f\left(A^c\right) \\
+
+& f\left(A^c\right)=f(A)^c
+
+\end{aligned}
+
+$$
+
+
+
+はいずれも成立しない。
+
+&&&
+
+
+
+$(1)$関数$f: \mathbb{R} \supset X \rightarrow \mathbb{R}$が単射である場合には、始集合の部分集合$A \subset X$を任意に選んだとき、以下の関係
+
+
+
+$$
+
+f\left(A^c\right) \subset f(A)^c
+
+$$
+
+
+
+が成り立つことが保証される。
+
+
+
+$(2)$逆の主張もまた成り立つため以下を得る。
+
+
+
+&&&prop (補集合の像を用いた単射の特徴づけ)
+
+$(1)$関数$f: \mathbb{R} \supset X \rightarrow \mathbb{R}$が与えられたとき、
+
+
+
+$$
+
+\forall A \subset X: f\left(A^c\right) \subset f(A)^c
+
+$$
+
+
+
+が成り立つことは、$f$が単射であるための必要十分条件である。
+
+&&&
+
+
+
+$(1)$関数$f: \mathbb{R} \supset X \rightarrow \mathbb{R}$が全射である場合には、始集合の部分集合$A \subset X$を任意に選んだとき、以下の関係
+
+
+
+$$
+
+f(A)^c \subset f\left(A^c\right)
+
+$$
+
+
+
+が成り立つことが保証される。
+
+
+
+$(2)$逆の主張もまた成り立つため以下を得る。
+
+
+
+&&&prop (補集合の像を用いた全射の特徴づけ)
+
+$(1)$関数$f: \mathbb{R} \supset X \rightarrow \mathbb{R}$が与えられたとき、
+
+
+
+$$
+
+\forall A \subset X: f(A)^c \subset f\left(A^c\right)
+
+$$
+
+
+
+が成り立つことは、$f$が全射であるための必要十分条件である。
+
+&&&
+
+
+
+$(1)$以上の2つの命題を踏まえると以下を得る。
+
+
+
+&&&prop (補集合の像を用いた全単射の特徴づけ)
+
+$(1)$関数$f: \mathbb{R} \supset X \rightarrow \mathbb{R}$が与えられたとき、
+
+
+
+$$
+
+\forall A \subset X: f\left(A^c\right)=f(A)^c
+
+$$
+
+
+
+が成り立つことは、$f$が全単射であるための必要十分条件である。
+
+&&&
+
+
+
+# 関数による共通部分の像
+
+$(1)$関数$f: \mathbb{R} \supset X \rightarrow \mathbb{R}$が与えられたとき、始集合の部分集合$A_1, A_2 \subset X$をそれぞれ任意に選ぶ。
+
+
+
+$(2)$このとき、これらの共通部分の像について以下の関係
+
+
+
+$$
+
+f\left(A_1 \cap A_2\right) \subset f\left(A_1\right) \cap f\left(A_2\right)
+
+$$
+
+
+
+が成り立つ。
+
+
+
+$(3)$つまり、共通部分の像は像の共通部分の部分集合であるということである。
+
+
+
+&&&prop (写像による共通部分の像)
+
+$(1)$関数$f: \mathbb{R} \supset X \rightarrow \mathbb{R}$が与えられたとき、
+
+
+
+$$
+
+\forall A_1, A_2 \subset X: f\left(A_1 \cap A_2\right) \subset f\left(A_1\right) \cap f\left(A_2\right)
+
+$$
+
+
+
+が成り立つ。
+
+&&&
+
+
+
+$(1)$上の命題とは逆に、任意の$A_1, A_2 \subset X$について以下の関係
+
+
+
+$$
+
+f\left(A_1\right) \cap f\left(A_2\right) \subset f\left(A_1 \cap A_2\right)
+
+$$
+
+
+
+は成り立つとは限らない。
+
+
+
+$(2)$つまり、上の命題の否定である、
+
+
+
+$$
+
+f\left(A_1\right) \cap f\left(A_2\right) \not \subset f\left(A_1 \cap A_2\right)
+
+$$
+
+
+
+を満たすような$A_1, A_2 \subset X$が存在する状況が起こり得るということである。
+
+
+
+$(3)$以下の例より明らかである。
+
+
+
+&&&ex (関数による共通部分の像)
+
+$(1)$関数$f:\{a, b\} \rightarrow\{c, d\}$が、
+
+
+
+$$
+
+f(a)=f(b)=c
+
+$$
+
+
+
+を満たすものとする。
+
+
+
+$(2)$このとき、始集合$\{a, b\}$の部分集合である$\{a\}$と$\{b\}$に注目すると、
+
+
+
+$$
+
+\begin{aligned}
+
+f(\{a\}) \cap f(\{b\}) & =\{c\} \cap\{c\}=\{c\} \\
+
+f(\{a\} \cap\{b\}) & =f(\phi)=\phi
+
+\end{aligned}
+
+$$
+
+
+
+となるため、
+
+
+
+$$
+
+f(\{a\}) \cap f(\{b\}) \not \subset f(\{a\} \cap\{b\})
+
+$$
+
+
+
+となる。
+
+&&&
+
+
+
+$(1)$ちなみに、関数$f: \mathbb{R} \supset X \rightarrow \mathbb{R}$が単射である場合には、任意の集合$A_1, A_2 \subset X$について、
+
+
+
+$$
+
+f\left(A_1\right) \cap f\left(A_2\right) \subset f\left(A_1 \cap A_2\right)
+
+$$
+
+
+
+もまた成立することが保証される。
+
+
+
+$(2)$先の命題の主張を踏まえると、これは、
+
+
+
+$$
+
+f\left(A_1 \cap A_2\right)=f\left(A_1\right) \cap f\left(A_2\right)
+
+$$
+
+
+
+と必要十分である。
+
+
+
+$(3)$逆の主張もまた成り立つため以下を得る。
+
+
+
+&&&prop (共通部分の像を用いた単射の特徴づけ)
+
+$(1)$関数$f: \mathbb{R} \supset X \rightarrow \mathbb{R}$が与えられたとき、
+
+
+
+$$
+
+\forall A_1, A_2 \subset X: f\left(A_1 \cap A_2\right)=f\left(A_1\right) \cap f\left(A_2\right)
+
+$$
+
+
+
+が成り立つことは、$f$が単射であるための必要十分条件である。
+
+&&&
+
+
+
+$(1)$先の命題は、関数の始集合の2つの部分集合に関するものだったが、始集合の任意個の部分集合についても同様の主張が成り立つ。
+
+
+
+&&&prop (関数による共通部分の像)
+
+$(1)$関数$f: \mathbb{R} \supset X \rightarrow \mathbb{R}$が与えられたとき、始集合$X$の部分集合族$\left\{A_\lambda\right\}_{\lambda \in \Lambda}$を任意に選ぶと、
+
+
+
+$$
+
+f\left(\bigcap_{\lambda \in \Lambda} A_\lambda\right) \subset \bigcap_{\lambda \in \Lambda} f\left(A_\lambda\right)
+
+$$
+
+
+
+が成り立つ。
+
+&&&
+
+
+
+&&&ex (関数による共通部分の像)
+
+$(1)$先の命題において添字集合$\Lambda$は任意の集合である。
+
+
+
+$(2)$特に、$\Lambda$が有限集合
+
+
+
+$$
+
+\Lambda=\{1,2, \cdots, n\}
+
+$$
+
+
+
+である場合、先の命題の主張は、
+
+
+
+$$
+
+f\left(A_1 \cap A_2 \cap \cdots \cap A_n\right) \subset f\left(A_1\right) \cap f\left(A_2\right) \cap \cdots \cap f\left(A_n\right)
+
+$$
+
+
+
+すなわち、
+
+
+
+$$
+
+f\left(\bigcap_{i=1}^n A_i\right) \subset \bigcap_{i=1}^n f\left(A_i\right)
+
+$$
+
+
+
+となる。
+
+&&&
+
+
+
+&&&ex (関数による共通部分の像)
+
+$(1)$先の命題において添字集合$\Lambda$は任意の集合である。
+
+
+
+$(2)$特に、$\Lambda$が可算集合
+
+
+
+$$
+
+\Lambda=\mathbb{N}
+
+$$
+
+
+
+である場合、先の命題の主張は、
+
+
+
+$$
+
+f\left(A_1 \cap A_2 \cap \cdots\right) \subset f\left(A_1\right) \cap f\left(A_2\right) \cap \cdots
+
+$$
+
+
+
+すなわち、
+
+
+
+$$
+
+f\left(\bigcap_{i=1}^{+\infty} A_i\right) \subset \bigcap_{i=1}^{+\infty} f\left(A_i\right)
+
+$$
+
+
+
+となる。
+
+&&&
+
+
+
+$(1)$先の例から明らかであるように、関数$f: \mathbb{R} \supset X \rightarrow \mathbb{R}$が与えられたとき、始集合$X$の部分集合族$\left\{A_\lambda\right\}_{\lambda \in \Lambda}$を任意に選ぶと、以下の関係
+
+
+
+$$
+
+\bigcap_{\lambda \in \Lambda} f\left(A_\lambda\right) \subset f\left(\bigcap_{\lambda \in \Lambda} A_\lambda\right)
+
+$$
+
+
+
+は成り立つとは限らない。
+
+
+
+$(2)$ただし、$f$が単射である場合には上の関係もまた成り立つことが保証される。
+
+
+
+$(3)$先の命題の主張を踏まえると、これは、
+
+
+
+$$
+
+f\left(\bigcap_{\lambda \in \Lambda} A_\lambda\right)=\bigcap_{\lambda \in \Lambda} f\left(A_\lambda\right)
+
+$$
+
+
+
+と必要十分である。
+
+
+
+$(4)$逆の主張もまた成り立つため以下を得る。
+
+
+
+$(5)$証明は先の命題と同様です。
+
+
+
+&&&prop (共通部分の像を用いた単射の特徴づけ)
+
+$(1)$関数$f: \mathbb{R} \supset X \rightarrow \mathbb{R}$が与えられたとき、始集合$X$の任意の部分集合族$\left\{A_\lambda\right\}_{\lambda \in \Lambda}$について、
+
+
+
+$$
+
+f\left(\bigcap_{\lambda \in \Lambda} A_\lambda\right) \subset \bigcap_{\lambda \in \Lambda} f\left(A_\lambda\right)
+
+$$
+
+
+
+が成り立つことは、$f$が単射であるための必要十分条件である。
+
+&&&
+
+
+
+# 関数による和集合の像
+
+$(1)$関数$f: \mathbb{R} \supset X \rightarrow \mathbb{R}$が与えられたとき、始集合の集合$A_1, A_2 \subset X$を任意に選ぶ。
+
+
+
+$(2)$このとき、これらの和集合の像について以下の関係
+
+
+
+$$
+
+f\left(A_1 \cup A_2\right)=f\left(A_1\right) \cup f\left(A_2\right)
+
+$$
+
+
+
+が成り立つ。
+
+
+
+&&&prop (関数による和集合の像)
+
+$(1)$関数$f: \mathbb{R} \supset X \rightarrow \mathbb{R}$が与えられたとき、
+
+
+
+$$
+
+\forall A_1, A_2 \subset X: f\left(A_1 \cup A_2\right)=f\left(A_1\right) \cup f\left(A_2\right)
+
+$$
+
+
+
+が成り立つ。
+
+&&&
+
+
+
+$(1)$関数による共通部分の像に関する先の命題とは異なり、和集合の像に関する上の命題では等号が成立することに注意。
+
+
+
+$(2)$上の命題は関数の始集合の2つの部分集合に関するものですが、始集合の部分集合族に関しても同様の命題が成り立つ。
+
+
+
+&&&prop (関数による和集合の像)
+
+$(1)$関数$f: \mathbb{R} \supset X \rightarrow \mathbb{R}$が与えられたとき、始集合$X$の部分集合族$\left\{A_\lambda\right\}_{\lambda \in \Lambda}$を任意に選ぶと、
+
+
+
+$$
+
+f\left(\bigcup_{\lambda \in \Lambda} A_\lambda\right)=\bigcup_{\lambda \in \Lambda} f\left(A_\lambda\right)
+
+$$
+
+
+
+が成り立つ。
+
+&&&
+
+
+
+&&&ex (関数による和集合の像)
+
+$(1)$先の命題において添字集合$\Lambda$は任意の集合である。
+
+
+
+$(2)$特に、$\Lambda$が有限集合
+
+
+
+$$
+
+\Lambda=\{1,2, \cdots, n\}
+
+$$
+
+
+
+である場合、先の命題の主張は、
+
+
+
+$$
+
+f\left(A_1 \cup A_2 \cup \cdots \cup A_n\right)=f\left(A_1\right) \cup f\left(A_2\right) \cup \cdots \cup f\left(A_n\right)
+
+$$
+
+
+
+すなわち、
+
+
+
+$$
+
+f\left(\bigcup_{i=1}^n A_i\right)=\bigcup_{i=1}^n f\left(A_i\right)
+
+$$
+
+
+
+となる。
+
+&&&
+
+
+
+&&&ex (関数による和集合の像)
+
+$(1)$先の命題において添字集合$\Lambda$は任意の集合である。
+
+
+
+$(2)$特に、$\Lambda$が可算集合
+
+
+
+$$
+
+\Lambda=\mathbb{N}
+
+$$
+
+
+
+である場合、先の命題の主張は、
+
+
+
+$$
+
+f\left(A_1 \cup A_2 \cup \cdots\right)=f\left(A_1\right) \cup f\left(A_2\right) \cup \cdots
+
+$$
+
+
+
+すなわち、
+
+
+
+$$
+
+f\left(\bigcup_{i=1}^{+\infty} A_i\right)=\bigcup_{i=1}^{+\infty} f\left(A_i\right)
+
+$$
+
+
+
+となる。
+
+&&&
+
+
+
+# 関数による差集合の像
+
+$(1)$関数$f: \mathbb{R} \supset X \rightarrow \mathbb{R}$が与えられたとき、始集合の部分集合$A_1, A_2 \subset X$を任意に選ぶ。
+
+
+
+$(2)$このとき、これらの差集合の像について以下の関係
+
+
+
+$$
+
+f\left(A_1\right) \backslash f\left(A_2\right) \subset f\left(A_1 \backslash A_2\right)
+
+$$
+
+
+
+が成り立つ。
+
+
+
+&&&prop (関数による差集合の像)
+
+$(1)$関数$f: \mathbb{R} \supset X \rightarrow \mathbb{R}$が与えられたとき、
+
+
+
+$$
+
+\forall A_1, A_2 \subset X: f\left(A_1\right) \backslash f\left(A_2\right) \subset f\left(A_1 \backslash A_2\right)
+
+$$
+
+
+
+が成り立つ。
+
+
+
+$(2)$特に、$A_1=X$である場合には、任意の$A \subset X$について、
+
+
+
+$$
+
+f(X) \backslash f(A) \subset f\left(A^c\right)
+
+$$
+
+
+
+となる。
+
+&&&
+
+
+
+$(1)$上の命題とは逆に、任意の集合$A_1, A_2 \subset X$について以下の関係
+
+
+
+$$
+
+f\left(A_1 \backslash A_2\right) \subset f\left(A_1\right) \backslash f\left(A_2\right)
+
+$$
+
+
+
+は成り立つとは限らない。
+
+
+
+$(2)$つまり、上の命題の否定である、
+
+
+
+$$
+
+f\left(A_1 \backslash A_2\right) \not \subset f\left(A_1\right) \backslash f\left(A_2\right)
+
+$$
+
+
+
+を満たす集合$A_1, A_2 \subset X$が存在する事態が起こり得るということである。
+
+
+
+$(3)$以下の例より明らかである。
+
+
+
+&&&ex (関数による差集合の像)
+
+$(1)$関数$f: \mathbb{R} \supset\{1,2\} \rightarrow \mathbb{R}$が、
+
+
+
+$$
+
+f(1)=f(2)=3
+
+$$
+
+
+
+を満たすものとする。
+
+
+
+$(2)$このとき、始集合$\{1,2\}$の部分集合である$\{1\}$と$\{2\}$に注目すると、
+
+
+
+$$
+
+\begin{aligned}
+
+f(\{1\} \backslash\{2\}) & =f(\{1\})=\{3\} \\
+
+f(\{1\}) \backslash f(\{2\}) & =\{3\} \backslash\{3\}=\phi
+
+\end{aligned}
+
+$$
+
+
+
+であるため、
+
+
+
+$$
+
+f(\{1\} \backslash\{2\}) \not \subset f(\{1\}) \backslash f(\{2\})
+
+$$
+
+
+
+となる。
+
+&&&
+
+
+
+$(1)$ちなみに、関数$f: \mathbb{R} \supset X \rightarrow \mathbb{R}$が単射である場合には、任意の集合$A_1, A_2 \subset X$について、
+
+
+
+$$
+
+f\left(A_1 \backslash A_2\right) \subset f\left(A_1\right) \backslash f\left(A_2\right)
+
+$$
+
+
+
+もまた成立することが保証される。
+
+
+
+$(2)$先の命題の主張を踏まえると、これは、
+
+
+
+$$
+
+f\left(A_1\right) \backslash f\left(A_2\right)=f\left(A_1 \backslash A_2\right)
+
+$$
+
+
+
+と必要十分である。
+
+
+
+$(3)$逆の主張もまた成り立つため以下を得る。
+
+
+
+&&&prop (差集合の像を用いた単射の特徴づけ)
+
+$(1)$関数$f: \mathbb{R} \supset X \rightarrow \mathbb{R}$が与えられたとき、
+
+
+
+$$
+
+\forall A_1, A_2 \subset X: f\left(A_1\right) \backslash f\left(A_2\right)=f\left(A_1 \backslash A_2\right)
+
+$$
+
+
+
+が成り立つことは、$f$が単射であるための必要十分条件である。
+
+&&&
